@@ -1479,6 +1479,7 @@
       "HC.Data/1.0.0": {
         "dependencies": {
           "HC.Core": "1.0.0",
+          "HC.Manager": "1.0.0",
           "Microsoft.EntityFrameworkCore": "3.1.32",
           "Microsoft.EntityFrameworkCore.Relational": "3.1.32",
           "Microsoft.EntityFrameworkCore.SqlServer": "3.1.32"
@@ -1488,6 +1489,17 @@
         },
         "compile": {
           "HC.Data.dll": {}
+        }
+      },
+      "HC.Manager/1.0.0": {
+        "dependencies": {
+          "HC.Core": "1.0.0"
+        },
+        "runtime": {
+          "HC.Manager.dll": {}
+        },
+        "compile": {
+          "HC.Manager.dll": {}
         }
       },
       "Microsoft.AspNetCore.Antiforgery/3.1.0.0": {
@@ -3867,6 +3879,11 @@
       "sha512": ""
     },
     "HC.Data/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "HC.Manager/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

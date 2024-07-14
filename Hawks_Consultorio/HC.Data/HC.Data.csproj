@@ -12,6 +12,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\HC.Core\HC.Core.csproj" />
+    <ProjectReference Include="..\HC.Manager\HC.Manager.csproj" />
   </ItemGroup>
 
 </Project>

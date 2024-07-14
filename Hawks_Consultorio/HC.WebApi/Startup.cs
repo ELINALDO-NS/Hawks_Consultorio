@@ -1,4 +1,7 @@
 using HC.Data.Context;
+using HC.Data.Repository;
+using HC.Manager.Implementation;
+using HC.Manager.Interfaces;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -31,6 +34,10 @@ namespace HC.WebApi
             services.AddControllers();
             services.AddDbContext<HCContext>(option => option.UseSqlServer(Configuration.GetConnectionString("HCConection")));
             services.AddSwaggerGen(x => x.SwaggerDoc("v1",new OpenApiInfo { Title="Hawks Consultorio",Version = "v1"}));
+            services.AddScoped<IClienteRepository, ClienteRepository>();
+            services.AddScoped<IClienteManager, ClienteManager>();
+        
+        
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

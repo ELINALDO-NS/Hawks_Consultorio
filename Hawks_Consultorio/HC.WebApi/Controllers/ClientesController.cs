@@ -1,6 +1,8 @@
 ﻿using HC.Core.Domain;
+using HC.Manager.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -10,25 +12,24 @@ namespace HC.WebApi.Controllers
     [ApiController]
     public class ClientesController : ControllerBase
     {
-        // GET: api/<ClientesController>
-        [HttpGet]
-        public  IActionResult Get()
+       private readonly IClienteManager _clienteManager;
+
+        public ClientesController(IClienteManager clienteManager)
         {
-            return Ok( new List<Cliente>() { 
-            new Cliente
-            {
-                Id = 1,
-                Nome = "Jubileu",
-                DataNascimento = new System.DateTime(1900,01,01)
-            }
-            });
+            _clienteManager = clienteManager;
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> Get()
+        {
+            return Ok( await _clienteManager.GetClientesAsync());
         }
 
         // GET api/<ClientesController>/5
         [HttpGet("{id}")]
-        public string Get(int id)
+        public async Task< IActionResult> Get(int id)
         {
-            return "value";
+            return Ok(await _clienteManager.GetClienteAsync(id));
         }
 
         // POST api/<ClientesController>
