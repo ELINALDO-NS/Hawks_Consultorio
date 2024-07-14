@@ -1,11 +1,14 @@
+using HC.Data.Context;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Microsoft.OpenApi.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -26,6 +29,8 @@ namespace HC.WebApi
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            services.AddDbContext<HCContext>(option => option.UseSqlServer(Configuration.GetConnectionString("HCConection")));
+            services.AddSwaggerGen(x => x.SwaggerDoc("v1",new OpenApiInfo { Title="Hawks Consultorio",Version = "v1"}));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -35,6 +40,13 @@ namespace HC.WebApi
             {
                 app.UseDeveloperExceptionPage();
             }
+
+
+            app.UseSwagger();
+            app.UseSwaggerUI(c => {
+                c.RoutePrefix = string.Empty;
+                c.SwaggerEndpoint("./Swagger/v1/swagger.json", "HC v1");
+               });    
 
             app.UseHttpsRedirection();
 

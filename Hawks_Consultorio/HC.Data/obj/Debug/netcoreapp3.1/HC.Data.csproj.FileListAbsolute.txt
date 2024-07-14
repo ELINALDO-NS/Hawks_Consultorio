@@ -8,3 +8,7 @@ C:\Users\Meu_Notebook\Documents\Projetos\CSHARP\Hawks_Consultorio\Hawks_Consulto
 C:\Users\Meu_Notebook\Documents\Projetos\CSHARP\Hawks_Consultorio\Hawks_Consultorio\HC.Data\obj\Debug\netcoreapp3.1\HC.Data.sourcelink.json
 C:\Users\Meu_Notebook\Documents\Projetos\CSHARP\Hawks_Consultorio\Hawks_Consultorio\HC.Data\obj\Debug\netcoreapp3.1\HC.Data.dll
 C:\Users\Meu_Notebook\Documents\Projetos\CSHARP\Hawks_Consultorio\Hawks_Consultorio\HC.Data\obj\Debug\netcoreapp3.1\HC.Data.pdb
+C:\Users\Meu_Notebook\Documents\Projetos\CSHARP\Hawks_Consultorio\Hawks_Consultorio\HC.Data\bin\Debug\netcoreapp3.1\HC.Core.dll
+C:\Users\Meu_Notebook\Documents\Projetos\CSHARP\Hawks_Consultorio\Hawks_Consultorio\HC.Data\bin\Debug\netcoreapp3.1\HC.Core.pdb
+C:\Users\Meu_Notebook\Documents\Projetos\CSHARP\Hawks_Consultorio\Hawks_Consultorio\HC.Data\obj\Debug\netcoreapp3.1\HC.Data.csproj.AssemblyReference.cache
+C:\Users\Meu_Notebook\Documents\Projetos\CSHARP\Hawks_Consultorio\Hawks_Consultorio\HC.Data\obj\Debug\netcoreapp3.1\HC.Data.csproj.Up2Date
