@@ -25,29 +25,40 @@ namespace HC.WebApi.Controllers
             return Ok( await _clienteManager.GetClientesAsync());
         }
 
-        // GET api/<ClientesController>/5
+    
         [HttpGet("{id}")]
-        public async Task< IActionResult> Get(int id)
+        public async Task<IActionResult> Get(int id)
         {
             return Ok(await _clienteManager.GetClienteAsync(id));
         }
 
-        // POST api/<ClientesController>
+        
         [HttpPost]
-        public void Post([FromBody] string value)
+        public async Task<IActionResult> Post (Cliente cliente)
         {
+            var ClienteInserido = await _clienteManager.InsertClienteAsync(cliente);
+
+            return CreatedAtAction(nameof(Get),new {id = cliente.Id},cliente);
         }
 
-        // PUT api/<ClientesController>/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        
+        [HttpPut]
+        public async Task<IActionResult> Put(Cliente cliente)
         {
+            var ClienteAtualizado = await _clienteManager.UpdateClienteAsync(cliente);
+            if (ClienteAtualizado == null)
+            {
+                return NotFound();
+            }
+            return Ok(ClienteAtualizado);
         }
 
-        // DELETE api/<ClientesController>/5
+       
         [HttpDelete("{id}")]
-        public void Delete(int id)
+        public async Task<IActionResult> Delete(int id)
         {
+            await _clienteManager.DeleteClienteAsync(id);
+            return NoContent();
         }
     }
 }

@@ -28,5 +28,37 @@ namespace HC.Data.Repository
         {
             return await _context.Clientes.FindAsync(id);
         }
+
+        public async Task<Cliente> InsertClienteAsync(Cliente cliente)
+        {
+            await _context.Clientes.AddAsync(cliente);
+            await _context.SaveChangesAsync();
+            return cliente;
+        }
+        public async Task<Cliente> UpdateClienteAsync(Cliente cliente)
+        {
+            var clienteConsulltado = _context.Clientes.Find(cliente.Id);
+            if (clienteConsulltado == null)
+            {
+                return null;
+            }
+
+
+            _context.Entry(clienteConsulltado).CurrentValues.SetValues(cliente);
+            _context.Update(clienteConsulltado);
+             await _context.SaveChangesAsync();
+            return clienteConsulltado;
+        }
+
+        public async Task DeleteClienteAsync(int id)
+        {
+            var clienteConsulltado = _context.Clientes.Find(id);
+            if (clienteConsulltado != null)
+            {
+                _context.Remove(clienteConsulltado);
+                await _context.SaveChangesAsync();
+            }
+
+        }
     }
 }
