@@ -1,7 +1,9 @@
+using FluentValidation.AspNetCore;
 using HC.Data.Context;
 using HC.Data.Repository;
 using HC.Manager.Implementation;
 using HC.Manager.Interfaces;
+using HC.Manager.Validator;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -14,6 +16,7 @@ using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -29,9 +32,16 @@ namespace HC.WebApi
         public IConfiguration Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
+        [Obsolete]
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllers();
+            services.AddControllers().
+                AddFluentValidation(p =>
+                {
+                    p.RegisterValidatorsFromAssemblyContaining<ClienteValidator>();
+                    p.ValidatorOptions.LanguageManager.Culture = new CultureInfo("pt-BR");
+                    
+                });
             services.AddDbContext<HCContext>(option => option.UseSqlServer(Configuration.GetConnectionString("HCConection")));
             services.AddSwaggerGen(x => x.SwaggerDoc("v1",new OpenApiInfo { Title="Hawks Consultorio",Version = "v1"}));
             services.AddScoped<IClienteRepository, ClienteRepository>();

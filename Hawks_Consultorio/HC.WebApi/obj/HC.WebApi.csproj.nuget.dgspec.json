@@ -192,6 +192,12 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "fluentvalidation.aspnetcore": {
+              "target": "Package",
+              "version": "[11.3.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -288,6 +294,10 @@
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.6.2, )"
+            },
+            "fluentvalidation.aspnetcore": {
+              "target": "Package",
+              "version": "[11.3.0, )"
             }
           },
           "imports": [

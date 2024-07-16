@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HC.Manager")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f8e9a48da23195863d77e7c3dc29a405ba0f41e3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6bec9fdb11067eb0ad78df33c15e84cee0605a84")]
 [assembly: System.Reflection.AssemblyProductAttribute("HC.Manager")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HC.Manager")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
