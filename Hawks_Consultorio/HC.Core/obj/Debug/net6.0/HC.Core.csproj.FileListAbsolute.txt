@@ -1,0 +1,12 @@
+C:\Users\Meu_Notebook\Documents\Projetos\CSHARP\Hawks_Consultorio\Hawks_Consultorio\HC.Core\bin\Debug\net6.0\HC.Core.deps.json
+C:\Users\Meu_Notebook\Documents\Projetos\CSHARP\Hawks_Consultorio\Hawks_Consultorio\HC.Core\bin\Debug\net6.0\HC.Core.dll
+C:\Users\Meu_Notebook\Documents\Projetos\CSHARP\Hawks_Consultorio\Hawks_Consultorio\HC.Core\bin\Debug\net6.0\HC.Core.pdb
+C:\Users\Meu_Notebook\Documents\Projetos\CSHARP\Hawks_Consultorio\Hawks_Consultorio\HC.Core\obj\Debug\net6.0\HC.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Meu_Notebook\Documents\Projetos\CSHARP\Hawks_Consultorio\Hawks_Consultorio\HC.Core\obj\Debug\net6.0\HC.Core.AssemblyInfoInputs.cache
+C:\Users\Meu_Notebook\Documents\Projetos\CSHARP\Hawks_Consultorio\Hawks_Consultorio\HC.Core\obj\Debug\net6.0\HC.Core.AssemblyInfo.cs
+C:\Users\Meu_Notebook\Documents\Projetos\CSHARP\Hawks_Consultorio\Hawks_Consultorio\HC.Core\obj\Debug\net6.0\HC.Core.csproj.CoreCompileInputs.cache
+C:\Users\Meu_Notebook\Documents\Projetos\CSHARP\Hawks_Consultorio\Hawks_Consultorio\HC.Core\obj\Debug\net6.0\HC.Core.sourcelink.json
+C:\Users\Meu_Notebook\Documents\Projetos\CSHARP\Hawks_Consultorio\Hawks_Consultorio\HC.Core\obj\Debug\net6.0\HC.Core.dll
+C:\Users\Meu_Notebook\Documents\Projetos\CSHARP\Hawks_Consultorio\Hawks_Consultorio\HC.Core\obj\Debug\net6.0\refint\HC.Core.dll
+C:\Users\Meu_Notebook\Documents\Projetos\CSHARP\Hawks_Consultorio\Hawks_Consultorio\HC.Core\obj\Debug\net6.0\HC.Core.pdb
+C:\Users\Meu_Notebook\Documents\Projetos\CSHARP\Hawks_Consultorio\Hawks_Consultorio\HC.Core\obj\Debug\net6.0\ref\HC.Core.dll

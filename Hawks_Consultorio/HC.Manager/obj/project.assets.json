@@ -1,16 +1,16 @@
 {
   "version": 3,
   "targets": {
-    ".NETCoreApp,Version=v3.1": {
+    "net6.0": {
       "FluentValidation/11.5.1": {
         "type": "package",
         "compile": {
-          "lib/netstandard2.1/FluentValidation.dll": {
+          "lib/net6.0/FluentValidation.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/netstandard2.1/FluentValidation.dll": {
+          "lib/net6.0/FluentValidation.dll": {
             "related": ".xml"
           }
         }
@@ -22,12 +22,12 @@
           "FluentValidation.DependencyInjectionExtensions": "11.5.1"
         },
         "compile": {
-          "lib/netcoreapp3.1/FluentValidation.AspNetCore.dll": {
+          "lib/net6.0/FluentValidation.AspNetCore.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/netcoreapp3.1/FluentValidation.AspNetCore.dll": {
+          "lib/net6.0/FluentValidation.AspNetCore.dll": {
             "related": ".xml"
           }
         },
@@ -67,7 +67,7 @@
       },
       "HC.Core/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v3.1",
+        "framework": ".NETCoreApp,Version=v6.0",
         "compile": {
           "bin/placeholder/HC.Core.dll": {}
         },
@@ -157,7 +157,7 @@
     }
   },
   "projectFileDependencyGroups": {
-    ".NETCoreApp,Version=v3.1": [
+    "net6.0": [
       "HC.Core >= 1.0.0",
       "fluentvalidation.aspnetcore >= 11.3.0"
     ]
@@ -179,7 +179,7 @@
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "netcoreapp3.1"
+        "net6.0"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -187,8 +187,8 @@
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
+        "net6.0": {
+          "targetAlias": "net6.0",
           "projectReferences": {
             "C:\\Users\\Meu_Notebook\\Documents\\Projetos\\CSHARP\\Hawks_Consultorio\\Hawks_Consultorio\\HC.Core\\HC.Core.csproj": {
               "projectPath": "C:\\Users\\Meu_Notebook\\Documents\\Projetos\\CSHARP\\Hawks_Consultorio\\Hawks_Consultorio\\HC.Core\\HC.Core.csproj"
@@ -208,8 +208,8 @@
       }
     },
     "frameworks": {
-      "netcoreapp3.1": {
-        "targetAlias": "netcoreapp3.1",
+      "net6.0": {
+        "targetAlias": "net6.0",
         "dependencies": {
           "fluentvalidation.aspnetcore": {
             "target": "Package",
@@ -227,6 +227,20 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[6.0.31, 6.0.31]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[6.0.31, 6.0.31]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[6.0.31, 6.0.31]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"

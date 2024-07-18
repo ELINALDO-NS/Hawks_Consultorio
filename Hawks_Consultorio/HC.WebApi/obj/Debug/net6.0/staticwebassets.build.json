@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "T58MquWRsQvOzkkZphrDR4UQSxNy8MnfJl4tdpahQww=",
+  "Source": "HC.WebApi",
+  "BasePath": "_content/HC.WebApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
