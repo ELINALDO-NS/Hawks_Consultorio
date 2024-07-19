@@ -1,4 +1,5 @@
 ﻿using HC.Core.Domain;
+using HC.Core.Shared.ModelViews;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -11,7 +12,7 @@ namespace HC.Manager.Interfaces
         Task<IEnumerable<Cliente>> GetClientesAsync();
         Task<Cliente> GetClienteAsync(int id);
         Task DeleteClienteAsync(int id);
-        Task<Cliente> InsertClienteAsync(Cliente cliente);
-        Task<Cliente> UpdateClienteAsync(Cliente cliente);
+        Task<Cliente> InsertClienteAsync(NovoCliente novocliente);
+        Task<Cliente> UpdateClienteAsync(AlteraCliente cliente);
     }
 }

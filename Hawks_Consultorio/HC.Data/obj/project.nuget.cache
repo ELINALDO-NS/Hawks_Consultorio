@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "AaiSS0cBTbU=",
+  "dgSpecHash": "FYm8/Y1z/30=",
   "success": true,
   "projectFilePath": "C:\\Users\\Meu_Notebook\\Documents\\Projetos\\CSHARP\\Hawks_Consultorio\\Hawks_Consultorio\\HC.Data\\HC.Data.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Meu_Notebook\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\Meu_Notebook\\.nuget\\packages\\fluentvalidation\\11.5.1\\fluentvalidation.11.5.1.nupkg.sha512",
     "C:\\Users\\Meu_Notebook\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.3.0\\fluentvalidation.aspnetcore.11.3.0.nupkg.sha512",
     "C:\\Users\\Meu_Notebook\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.5.1\\fluentvalidation.dependencyinjectionextensions.11.5.1.nupkg.sha512",

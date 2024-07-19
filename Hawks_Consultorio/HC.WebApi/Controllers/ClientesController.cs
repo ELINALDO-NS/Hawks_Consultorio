@@ -1,4 +1,5 @@
 ﻿using HC.Core.Domain;
+using HC.Core.Shared.ModelViews;
 using HC.Manager.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
@@ -34,18 +35,18 @@ namespace HC.WebApi.Controllers
 
         
         [HttpPost]
-        public async Task<IActionResult> Post (Cliente cliente)
+        public async Task<IActionResult> Post (NovoCliente novocliente)
         {
-            var ClienteInserido = await _clienteManager.InsertClienteAsync(cliente);
+            var ClienteInserido = await _clienteManager.InsertClienteAsync(novocliente);
 
-            return CreatedAtAction(nameof(Get),new {id = cliente.Id},cliente);
+            return CreatedAtAction(nameof(Get),new {id = ClienteInserido.Id}, ClienteInserido);
         }
 
         
         [HttpPut]
-        public async Task<IActionResult> Put(Cliente cliente)
+        public async Task<IActionResult> Put(AlteraCliente alteracliente)
         {
-            var ClienteAtualizado = await _clienteManager.UpdateClienteAsync(cliente);
+            var ClienteAtualizado = await _clienteManager.UpdateClienteAsync(alteracliente);
             if (ClienteAtualizado == null)
             {
                 return NotFound();

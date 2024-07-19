@@ -8,7 +8,9 @@
     ".NETCoreApp,Version=v6.0": {
       "HC.WebApi/1.0.0": {
         "dependencies": {
+          "AutoMapper": "13.0.1",
           "HC.Core": "1.0.0",
+          "HC.Core.Shared": "1.0.0",
           "HC.Data": "1.0.0",
           "Microsoft.EntityFrameworkCore": "6.0.0",
           "Microsoft.EntityFrameworkCore.Design": "6.0.0",
@@ -20,6 +22,17 @@
         },
         "runtime": {
           "HC.WebApi.dll": {}
+        }
+      },
+      "AutoMapper/13.0.1": {
+        "dependencies": {
+          "Microsoft.Extensions.Options": "6.0.0"
+        },
+        "runtime": {
+          "lib/net6.0/AutoMapper.dll": {
+            "assemblyVersion": "13.0.0.0",
+            "fileVersion": "13.0.1.0"
+          }
         }
       },
       "FluentValidation/11.5.1": {
@@ -518,6 +531,11 @@
           "HC.Core.dll": {}
         }
       },
+      "HC.Core.Shared/1.0.0": {
+        "runtime": {
+          "HC.Core.Shared.dll": {}
+        }
+      },
       "HC.Data/1.0.0": {
         "dependencies": {
           "HC.Core": "1.0.0",
@@ -532,7 +550,9 @@
       },
       "HC.Manager/1.0.0": {
         "dependencies": {
+          "AutoMapper": "13.0.1",
           "HC.Core": "1.0.0",
+          "HC.Core.Shared": "1.0.0",
           "FluentValidation.AspNetCore": "11.3.0"
         },
         "runtime": {
@@ -546,6 +566,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "AutoMapper/13.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-/Fx1SbJ16qS7dU4i604Sle+U9VLX+WSNVJggk6MupKVkYvvBm4XqYaeFuf67diHefHKHs50uQIS2YEDFhPCakQ==",
+      "path": "automapper/13.0.1",
+      "hashPath": "automapper.13.0.1.nupkg.sha512"
     },
     "FluentValidation/11.5.1": {
       "type": "package",
@@ -919,6 +946,11 @@
       "hashPath": "system.windows.extensions.4.7.0.nupkg.sha512"
     },
     "HC.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "HC.Core.Shared/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

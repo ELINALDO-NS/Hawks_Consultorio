@@ -3,6 +3,7 @@ using HC.Data.Context;
 using HC.Data.Repository;
 using HC.Manager.Implementation;
 using HC.Manager.Interfaces;
+using HC.Manager.Mappings;
 using HC.Manager.Validator;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -38,10 +39,12 @@ namespace HC.WebApi
             services.AddControllers().
                 AddFluentValidation(p =>
                 {
-                    p.RegisterValidatorsFromAssemblyContaining<ClienteValidator>();
+                    p.RegisterValidatorsFromAssemblyContaining<NovoClienteValidator>();
+                    p.RegisterValidatorsFromAssemblyContaining<AlteraClienteValidator>();
                     p.ValidatorOptions.LanguageManager.Culture = new CultureInfo("pt-BR");
                     
                 });
+            services.AddAutoMapper(typeof(NovoClienteMappigProfile), typeof(AlteraClienteMappingProfile));
             services.AddDbContext<HCContext>(option => option.UseSqlServer(Configuration.GetConnectionString("HCConection")));
             services.AddSwaggerGen(x => x.SwaggerDoc("v1",new OpenApiInfo { Title="Hawks Consultorio",Version = "v1"}));
             services.AddScoped<IClienteRepository, ClienteRepository>();
