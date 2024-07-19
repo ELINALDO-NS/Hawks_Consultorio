@@ -5,6 +5,7 @@ using HC.Manager.Implementation;
 using HC.Manager.Interfaces;
 using HC.Manager.Mappings;
 using HC.Manager.Validator;
+using HC.WebApi.Configuration;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -36,21 +37,15 @@ namespace HC.WebApi
         [Obsolete]
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllers().
-                AddFluentValidation(p =>
-                {
-                    p.RegisterValidatorsFromAssemblyContaining<NovoClienteValidator>();
-                    p.RegisterValidatorsFromAssemblyContaining<AlteraClienteValidator>();
-                    p.ValidatorOptions.LanguageManager.Culture = new CultureInfo("pt-BR");
-                    
-                });
-            services.AddAutoMapper(typeof(NovoClienteMappigProfile), typeof(AlteraClienteMappingProfile));
+            services.AddControllers();
+            services.AddFluenteValidationConfiguration();
+            services.AddAutoMapperConfiguration();
+            services.AddSwaggerConfiguration();
             services.AddDbContext<HCContext>(option => option.UseSqlServer(Configuration.GetConnectionString("HCConection")));
-            services.AddSwaggerGen(x => x.SwaggerDoc("v1",new OpenApiInfo { Title="Hawks Consultorio",Version = "v1"}));
-            services.AddScoped<IClienteRepository, ClienteRepository>();
-            services.AddScoped<IClienteManager, ClienteManager>();
-        
-        
+            services.UseDependencyInjectionConfiguration();
+
+
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -62,11 +57,7 @@ namespace HC.WebApi
             }
 
 
-            app.UseSwagger();
-            app.UseSwaggerUI(c => {
-                c.RoutePrefix = string.Empty;
-                c.SwaggerEndpoint("./Swagger/v1/swagger.json", "HC v1");
-               });    
+            app.UseSwaggerConfiguration();
 
             app.UseHttpsRedirection();
 
