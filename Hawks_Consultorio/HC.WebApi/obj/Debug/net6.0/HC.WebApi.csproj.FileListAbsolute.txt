@@ -76,3 +76,5 @@ C:\Users\Meu_Notebook\Documents\Projetos\CSHARP\Hawks_Consultorio\Hawks_Consulto
 C:\Users\Meu_Notebook\Documents\Projetos\CSHARP\Hawks_Consultorio\Hawks_Consultorio\HC.WebApi\bin\Debug\net6.0\AutoMapper.dll
 C:\Users\Meu_Notebook\Documents\Projetos\CSHARP\Hawks_Consultorio\Hawks_Consultorio\HC.WebApi\bin\Debug\net6.0\HC.Core.Shared.dll
 C:\Users\Meu_Notebook\Documents\Projetos\CSHARP\Hawks_Consultorio\Hawks_Consultorio\HC.WebApi\bin\Debug\net6.0\HC.Core.Shared.pdb
+C:\Users\Meu_Notebook\Documents\Projetos\CSHARP\Hawks_Consultorio\Hawks_Consultorio\HC.WebApi\bin\Debug\net6.0\HC.WebApi.xml
+C:\Users\Meu_Notebook\Documents\Projetos\CSHARP\Hawks_Consultorio\Hawks_Consultorio\HC.WebApi\bin\Debug\net6.0\HC.Core.Shared.xml

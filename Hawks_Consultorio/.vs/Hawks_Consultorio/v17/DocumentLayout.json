@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\Meu_Notebook\\Documents\\Projetos\\CSHARP\\Hawks_Consultorio\\Hawks_Consultorio\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{93A7AC8D-0D19-427B-B151-159B66BD123C}|HC.WebApi\\HC.WebApi.csproj|c:\\users\\meu_notebook\\documents\\projetos\\csharp\\hawks_consultorio\\hawks_consultorio\\hc.webapi\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{93A7AC8D-0D19-427B-B151-159B66BD123C}|HC.WebApi\\HC.WebApi.csproj|solutionrelative:hc.webapi\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2CF0E2B0-879A-48F8-B693-CD35DCFA8C7A}|HC.Core.Shared\\HC.Core.Shared.csproj|c:\\users\\meu_notebook\\documents\\projetos\\csharp\\hawks_consultorio\\hawks_consultorio\\hc.core.shared\\modelviews\\novocliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2CF0E2B0-879A-48F8-B693-CD35DCFA8C7A}|HC.Core.Shared\\HC.Core.Shared.csproj|solutionrelative:hc.core.shared\\modelviews\\novocliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -19,14 +19,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Startup.cs",
-              "DocumentMoniker": "C:\\Users\\Meu_Notebook\\Documents\\Projetos\\CSHARP\\Hawks_Consultorio\\Hawks_Consultorio\\HC.WebApi\\Startup.cs",
-              "RelativeDocumentMoniker": "HC.WebApi\\Startup.cs",
-              "ToolTip": "C:\\Users\\Meu_Notebook\\Documents\\Projetos\\CSHARP\\Hawks_Consultorio\\Hawks_Consultorio\\HC.WebApi\\Startup.cs",
-              "RelativeToolTip": "HC.WebApi\\Startup.cs",
-              "ViewState": "AQIAABsAAAAAAAAAAAAQwCgAAAA5AAAA",
+              "Title": "NovoCliente.cs",
+              "DocumentMoniker": "C:\\Users\\Meu_Notebook\\Documents\\Projetos\\CSHARP\\Hawks_Consultorio\\Hawks_Consultorio\\HC.Core.Shared\\ModelViews\\NovoCliente.cs",
+              "RelativeDocumentMoniker": "HC.Core.Shared\\ModelViews\\NovoCliente.cs",
+              "ToolTip": "C:\\Users\\Meu_Notebook\\Documents\\Projetos\\CSHARP\\Hawks_Consultorio\\Hawks_Consultorio\\HC.Core.Shared\\ModelViews\\NovoCliente.cs",
+              "RelativeToolTip": "HC.Core.Shared\\ModelViews\\NovoCliente.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAwwBkAAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-19T23:05:50.531Z",
+              "WhenOpened": "2024-07-20T00:16:36.599Z",
               "EditorCaption": ""
             }
           ]

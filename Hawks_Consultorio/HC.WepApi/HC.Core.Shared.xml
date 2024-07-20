@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>HC.Core.Shared</name>
+    </assembly>
+    <members>
+        <member name="P:HC.Core.Shared.ModelViews.NovoCliente.Nome">
+            <summary>
+            
+            </summary>
+        </member>
+    </members>
+</doc>

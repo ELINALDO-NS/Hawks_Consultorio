@@ -10,3 +10,4 @@ C:\Users\Meu_Notebook\Documents\Projetos\CSHARP\Hawks_Consultorio\Hawks_Consulto
 C:\Users\Meu_Notebook\Documents\Projetos\CSHARP\Hawks_Consultorio\Hawks_Consultorio\HC.Core.Shared\obj\Debug\net6.0\refint\HC.Core.Shared.dll
 C:\Users\Meu_Notebook\Documents\Projetos\CSHARP\Hawks_Consultorio\Hawks_Consultorio\HC.Core.Shared\obj\Debug\net6.0\HC.Core.Shared.pdb
 C:\Users\Meu_Notebook\Documents\Projetos\CSHARP\Hawks_Consultorio\Hawks_Consultorio\HC.Core.Shared\obj\Debug\net6.0\ref\HC.Core.Shared.dll
+C:\Users\Meu_Notebook\Documents\Projetos\CSHARP\Hawks_Consultorio\Hawks_Consultorio\HC.Core.Shared\bin\Debug\net6.0\HC.Core.Shared.xml
