@@ -23,9 +23,9 @@
         </member>
         <member name="P:HC.Core.Shared.ModelViews.NovoCliente.Sexo">
             <summary>
-            Sexo do cliente
+            Sexo do cliente: M ou F
             </summary>
-            <example>M</example>
+            <example>F</example>
         </member>
         <member name="P:HC.Core.Shared.ModelViews.NovoCliente.Telefone">
             <summary>

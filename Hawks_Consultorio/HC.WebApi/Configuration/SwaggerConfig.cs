@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Builder;
+﻿using MicroElements.Swashbuckle.FluentValidation.AspNetCore;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.OpenApi.Models;
 using System;
@@ -31,6 +32,7 @@ namespace HC.WebApi.Configuration
                     TermsOfService = new System.Uri("https://opensource.org/osd")
 
                 });
+               
                 var XmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
                 var XmlPath = Path.Combine(AppContext.BaseDirectory, XmlFile);
                 c.IncludeXmlComments(XmlPath);
@@ -38,14 +40,16 @@ namespace HC.WebApi.Configuration
                 c.IncludeXmlComments(XmlPath);
 
             });
-          
-            
-          
+            services.AddFluentValidationRulesToSwagger();
+
+
+
 
         }
         public static void UseSwaggerConfiguration(this IApplicationBuilder app)
         {
             app.UseSwagger();
+
             app.UseSwaggerUI(c => {
                 c.RoutePrefix = string.Empty;
                 c.SwaggerEndpoint("./Swagger/v1/swagger.json", "HC v1");
