@@ -41,8 +41,7 @@ namespace HC.WebApi
             services.AddFluenteValidationConfiguration();
             services.AddAutoMapperConfiguration();
             services.AddSwaggerConfiguration();
-
-            services.AddDbContext<HCContext>(option => option.UseSqlServer(Configuration.GetConnectionString("HCConection")));
+            services.AddDatabaseConfiguration(Configuration);
             services.UseDependencyInjectionConfiguration();
 
 
@@ -57,7 +56,7 @@ namespace HC.WebApi
                 app.UseDeveloperExceptionPage();
             }
 
-
+            app.UseDatabaseConfiguration();
             app.UseSwaggerConfiguration();
 
             app.UseHttpsRedirection();

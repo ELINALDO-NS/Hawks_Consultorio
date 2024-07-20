@@ -1,12 +1,54 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Meu_Notebook\\Documents\\Projetos\\CSHARP\\Hawks_Consultorio\\Hawks_Consultorio\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{93A7AC8D-0D19-427B-B151-159B66BD123C}|HC.WebApi\\HC.WebApi.csproj|c:\\users\\meu_notebook\\documents\\projetos\\csharp\\hawks_consultorio\\hawks_consultorio\\hc.webapi\\configuration\\databaseconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93A7AC8D-0D19-427B-B151-159B66BD123C}|HC.WebApi\\HC.WebApi.csproj|solutionrelative:hc.webapi\\configuration\\databaseconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93A7AC8D-0D19-427B-B151-159B66BD123C}|HC.WebApi\\HC.WebApi.csproj|c:\\users\\meu_notebook\\documents\\projetos\\csharp\\hawks_consultorio\\hawks_consultorio\\hc.webapi\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93A7AC8D-0D19-427B-B151-159B66BD123C}|HC.WebApi\\HC.WebApi.csproj|solutionrelative:hc.webapi\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Startup.cs",
+              "DocumentMoniker": "C:\\Users\\Meu_Notebook\\Documents\\Projetos\\CSHARP\\Hawks_Consultorio\\Hawks_Consultorio\\HC.WebApi\\Startup.cs",
+              "RelativeDocumentMoniker": "HC.WebApi\\Startup.cs",
+              "ToolTip": "C:\\Users\\Meu_Notebook\\Documents\\Projetos\\CSHARP\\Hawks_Consultorio\\Hawks_Consultorio\\HC.WebApi\\Startup.cs",
+              "RelativeToolTip": "HC.WebApi\\Startup.cs",
+              "ViewState": "AQIAADIAAAAAAAAAAAAwwDoAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-20T15:21:25.61Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DatabaseConfig.cs",
+              "DocumentMoniker": "C:\\Users\\Meu_Notebook\\Documents\\Projetos\\CSHARP\\Hawks_Consultorio\\Hawks_Consultorio\\HC.WebApi\\Configuration\\DatabaseConfig.cs",
+              "RelativeDocumentMoniker": "HC.WebApi\\Configuration\\DatabaseConfig.cs",
+              "ToolTip": "C:\\Users\\Meu_Notebook\\Documents\\Projetos\\CSHARP\\Hawks_Consultorio\\Hawks_Consultorio\\HC.WebApi\\Configuration\\DatabaseConfig.cs",
+              "RelativeToolTip": "HC.WebApi\\Configuration\\DatabaseConfig.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAIwBUAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-20T15:19:39.971Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
