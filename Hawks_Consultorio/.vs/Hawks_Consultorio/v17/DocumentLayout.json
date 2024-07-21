@@ -3,12 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\Meu_Notebook\\Documents\\Projetos\\CSHARP\\Hawks_Consultorio\\Hawks_Consultorio\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{93A7AC8D-0D19-427B-B151-159B66BD123C}|HC.WebApi\\HC.WebApi.csproj|c:\\users\\meu_notebook\\documents\\projetos\\csharp\\hawks_consultorio\\hawks_consultorio\\hc.webapi\\configuration\\databaseconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{93A7AC8D-0D19-427B-B151-159B66BD123C}|HC.WebApi\\HC.WebApi.csproj|solutionrelative:hc.webapi\\configuration\\databaseconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{93A7AC8D-0D19-427B-B151-159B66BD123C}|HC.WebApi\\HC.WebApi.csproj|c:\\users\\meu_notebook\\documents\\projetos\\csharp\\hawks_consultorio\\hawks_consultorio\\hc.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93A7AC8D-0D19-427B-B151-159B66BD123C}|HC.WebApi\\HC.WebApi.csproj|solutionrelative:hc.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{93A7AC8D-0D19-427B-B151-159B66BD123C}|HC.WebApi\\HC.WebApi.csproj|c:\\users\\meu_notebook\\documents\\projetos\\csharp\\hawks_consultorio\\hawks_consultorio\\hc.webapi\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{93A7AC8D-0D19-427B-B151-159B66BD123C}|HC.WebApi\\HC.WebApi.csproj|solutionrelative:hc.webapi\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93A7AC8D-0D19-427B-B151-159B66BD123C}|HC.WebApi\\HC.WebApi.csproj|c:\\users\\meu_notebook\\documents\\projetos\\csharp\\hawks_consultorio\\hawks_consultorio\\hc.webapi\\controllers\\clientescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93A7AC8D-0D19-427B-B151-159B66BD123C}|HC.WebApi\\HC.WebApi.csproj|solutionrelative:hc.webapi\\controllers\\clientescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93A7AC8D-0D19-427B-B151-159B66BD123C}|HC.WebApi\\HC.WebApi.csproj|c:\\users\\meu_notebook\\documents\\projetos\\csharp\\hawks_consultorio\\hawks_consultorio\\hc.webapi\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{93A7AC8D-0D19-427B-B151-159B66BD123C}|HC.WebApi\\HC.WebApi.csproj|solutionrelative:hc.webapi\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93A7AC8D-0D19-427B-B151-159B66BD123C}|HC.WebApi\\HC.WebApi.csproj|c:\\users\\meu_notebook\\documents\\projetos\\csharp\\hawks_consultorio\\hawks_consultorio\\hc.webapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{93A7AC8D-0D19-427B-B151-159B66BD123C}|HC.WebApi\\HC.WebApi.csproj|solutionrelative:hc.webapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93A7AC8D-0D19-427B-B151-159B66BD123C}|HC.WebApi\\HC.WebApi.csproj|c:\\users\\meu_notebook\\documents\\projetos\\csharp\\hawks_consultorio\\hawks_consultorio\\hc.webapi\\configuration\\databaseconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93A7AC8D-0D19-427B-B151-159B66BD123C}|HC.WebApi\\HC.WebApi.csproj|solutionrelative:hc.webapi\\configuration\\databaseconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
@@ -28,14 +44,64 @@
               "RelativeDocumentMoniker": "HC.WebApi\\Startup.cs",
               "ToolTip": "C:\\Users\\Meu_Notebook\\Documents\\Projetos\\CSHARP\\Hawks_Consultorio\\Hawks_Consultorio\\HC.WebApi\\Startup.cs",
               "RelativeToolTip": "HC.WebApi\\Startup.cs",
-              "ViewState": "AQIAADIAAAAAAAAAAAAwwDoAAAArAAAA",
+              "ViewState": "AQIAACkAAAAAAAAAAAAwwDgAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-20T15:21:25.61Z",
+              "WhenOpened": "2024-07-21T14:52:12.239Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ClientesController.cs",
+              "DocumentMoniker": "C:\\Users\\Meu_Notebook\\Documents\\Projetos\\CSHARP\\Hawks_Consultorio\\Hawks_Consultorio\\HC.WebApi\\Controllers\\ClientesController.cs",
+              "RelativeDocumentMoniker": "HC.WebApi\\Controllers\\ClientesController.cs",
+              "ToolTip": "C:\\Users\\Meu_Notebook\\Documents\\Projetos\\CSHARP\\Hawks_Consultorio\\Hawks_Consultorio\\HC.WebApi\\Controllers\\ClientesController.cs",
+              "RelativeToolTip": "HC.WebApi\\Controllers\\ClientesController.cs",
+              "ViewState": "AQIAADwAAAAAAAAAAAAgwEQAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-21T00:41:01.991Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\Meu_Notebook\\Documents\\Projetos\\CSHARP\\Hawks_Consultorio\\Hawks_Consultorio\\HC.WebApi\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "HC.WebApi\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\Meu_Notebook\\Documents\\Projetos\\CSHARP\\Hawks_Consultorio\\Hawks_Consultorio\\HC.WebApi\\appsettings.Development.json",
+              "RelativeToolTip": "HC.WebApi\\appsettings.Development.json",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA0AAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-07-21T00:15:39.116Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Meu_Notebook\\Documents\\Projetos\\CSHARP\\Hawks_Consultorio\\Hawks_Consultorio\\HC.WebApi\\appsettings.json",
+              "RelativeDocumentMoniker": "HC.WebApi\\appsettings.json",
+              "ToolTip": "C:\\Users\\Meu_Notebook\\Documents\\Projetos\\CSHARP\\Hawks_Consultorio\\Hawks_Consultorio\\HC.WebApi\\appsettings.json",
+              "RelativeToolTip": "HC.WebApi\\appsettings.json",
+              "ViewState": "AQIAABQAAAAAAAAAAAAcwCcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-07-21T00:15:25.404Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Meu_Notebook\\Documents\\Projetos\\CSHARP\\Hawks_Consultorio\\Hawks_Consultorio\\HC.WebApi\\Program.cs",
+              "RelativeDocumentMoniker": "HC.WebApi\\Program.cs",
+              "ToolTip": "C:\\Users\\Meu_Notebook\\Documents\\Projetos\\CSHARP\\Hawks_Consultorio\\Hawks_Consultorio\\HC.WebApi\\Program.cs",
+              "RelativeToolTip": "HC.WebApi\\Program.cs",
+              "ViewState": "AQIAACgAAAAAAAAAAAAUwDUAAABKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-20T23:12:18.58Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "DatabaseConfig.cs",
               "DocumentMoniker": "C:\\Users\\Meu_Notebook\\Documents\\Projetos\\CSHARP\\Hawks_Consultorio\\Hawks_Consultorio\\HC.WebApi\\Configuration\\DatabaseConfig.cs",
               "RelativeDocumentMoniker": "HC.WebApi\\Configuration\\DatabaseConfig.cs",
@@ -43,8 +109,7 @@
               "RelativeToolTip": "HC.WebApi\\Configuration\\DatabaseConfig.cs",
               "ViewState": "AQIAAAwAAAAAAAAAAAAIwBUAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-20T15:19:39.971Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-20T15:19:39.971Z"
             }
           ]
         }
