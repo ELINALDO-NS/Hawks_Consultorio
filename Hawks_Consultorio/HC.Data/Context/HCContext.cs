@@ -10,6 +10,8 @@ namespace HC.Data.Context
     public class HCContext : DbContext
     {
         public DbSet<Cliente> Clientes { get; set; }
+        public DbSet<Endereco> Enderecos { get; set; }
+        public DbSet<Telefone> Tetefones { get; set; }
 
         public HCContext(DbContextOptions options) : base(options)
         {
@@ -20,6 +22,7 @@ namespace HC.Data.Context
             base.OnModelCreating(modelBuilder);
             modelBuilder.ApplyConfiguration(new ClienteConfiguration());
             modelBuilder.ApplyConfiguration(new EnderecoConfiguration());
+            modelBuilder.ApplyConfiguration(new TelefoneConfiguration());
         }
     }
 }

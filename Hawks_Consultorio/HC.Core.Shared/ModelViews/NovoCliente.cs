@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -25,11 +26,8 @@ namespace HC.Core.Shared.ModelViews
         /// </summary>
         /// <example>F</example>
         public char Sexo { get; set; }
-        /// <summary>
-        /// Telefone do cliente
-        /// </summary>
-        /// <example>99999999999</example>
-        public string Telefone { get; set; }
+        
+        public ICollection<NovoTelefone> Telefones { get; set; }
         /// <summary>
         /// Documento do cliente: CNH,CPF ou RG 
         /// </summary>

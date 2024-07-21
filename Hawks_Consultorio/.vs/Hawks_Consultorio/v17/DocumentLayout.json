@@ -3,12 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\Meu_Notebook\\Documents\\Projetos\\CSHARP\\Hawks_Consultorio\\Hawks_Consultorio\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2CF0E2B0-879A-48F8-B693-CD35DCFA8C7A}|HC.Core.Shared\\HC.Core.Shared.csproj|c:\\users\\meu_notebook\\documents\\projetos\\csharp\\hawks_consultorio\\hawks_consultorio\\hc.core.shared\\modelviews\\novoendereco.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2CF0E2B0-879A-48F8-B693-CD35DCFA8C7A}|HC.Core.Shared\\HC.Core.Shared.csproj|solutionrelative:hc.core.shared\\modelviews\\novoendereco.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{76B53BD8-35CA-4078-8D0C-7C69B9631930}|HC.Data\\HC.Data.csproj|c:\\users\\meu_notebook\\documents\\projetos\\csharp\\hawks_consultorio\\hawks_consultorio\\hc.data\\repository\\clienterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{76B53BD8-35CA-4078-8D0C-7C69B9631930}|HC.Data\\HC.Data.csproj|solutionrelative:hc.data\\repository\\clienterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{93A7AC8D-0D19-427B-B151-159B66BD123C}|HC.WebApi\\HC.WebApi.csproj|c:\\users\\meu_notebook\\documents\\projetos\\csharp\\hawks_consultorio\\hawks_consultorio\\hc.webapi\\configuration\\fluentevalidationconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{93A7AC8D-0D19-427B-B151-159B66BD123C}|HC.WebApi\\HC.WebApi.csproj|solutionrelative:hc.webapi\\configuration\\fluentevalidationconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2B02C6E8-1BE3-4927-9F8E-4C18666D4EF1}|HC.Manager\\HC.Manager.csproj|c:\\users\\meu_notebook\\documents\\projetos\\csharp\\hawks_consultorio\\hawks_consultorio\\hc.manager\\mappings\\novoclientemappigprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B02C6E8-1BE3-4927-9F8E-4C18666D4EF1}|HC.Manager\\HC.Manager.csproj|solutionrelative:hc.manager\\mappings\\novoclientemappigprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93A7AC8D-0D19-427B-B151-159B66BD123C}|HC.WebApi\\HC.WebApi.csproj|c:\\users\\meu_notebook\\documents\\projetos\\csharp\\hawks_consultorio\\hawks_consultorio\\hc.webapi\\configuration\\automapperconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93A7AC8D-0D19-427B-B151-159B66BD123C}|HC.WebApi\\HC.WebApi.csproj|solutionrelative:hc.webapi\\configuration\\automapperconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B02C6E8-1BE3-4927-9F8E-4C18666D4EF1}|HC.Manager\\HC.Manager.csproj|c:\\users\\meu_notebook\\documents\\projetos\\csharp\\hawks_consultorio\\hawks_consultorio\\hc.manager\\validator\\novotelefonevalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B02C6E8-1BE3-4927-9F8E-4C18666D4EF1}|HC.Manager\\HC.Manager.csproj|solutionrelative:hc.manager\\validator\\novotelefonevalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B02C6E8-1BE3-4927-9F8E-4C18666D4EF1}|HC.Manager\\HC.Manager.csproj|c:\\users\\meu_notebook\\documents\\projetos\\csharp\\hawks_consultorio\\hawks_consultorio\\hc.manager\\validator\\novoclientevalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B02C6E8-1BE3-4927-9F8E-4C18666D4EF1}|HC.Manager\\HC.Manager.csproj|solutionrelative:hc.manager\\validator\\novoclientevalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2CF0E2B0-879A-48F8-B693-CD35DCFA8C7A}|HC.Core.Shared\\HC.Core.Shared.csproj|c:\\users\\meu_notebook\\documents\\projetos\\csharp\\hawks_consultorio\\hawks_consultorio\\hc.core.shared\\modelviews\\novotelefone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2CF0E2B0-879A-48F8-B693-CD35DCFA8C7A}|HC.Core.Shared\\HC.Core.Shared.csproj|solutionrelative:hc.core.shared\\modelviews\\novotelefone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2CF0E2B0-879A-48F8-B693-CD35DCFA8C7A}|HC.Core.Shared\\HC.Core.Shared.csproj|c:\\users\\meu_notebook\\documents\\projetos\\csharp\\hawks_consultorio\\hawks_consultorio\\hc.core.shared\\modelviews\\novocliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2CF0E2B0-879A-48F8-B693-CD35DCFA8C7A}|HC.Core.Shared\\HC.Core.Shared.csproj|solutionrelative:hc.core.shared\\modelviews\\novocliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D636A333-4076-4BF3-9918-4C5029FD3183}|HC.Core\\HC.Core.csproj|c:\\users\\meu_notebook\\documents\\projetos\\csharp\\hawks_consultorio\\hawks_consultorio\\hc.core\\domain\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D636A333-4076-4BF3-9918-4C5029FD3183}|HC.Core\\HC.Core.csproj|solutionrelative:hc.core\\domain\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,27 +47,105 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "NovoEndereco.cs",
-              "DocumentMoniker": "C:\\Users\\Meu_Notebook\\Documents\\Projetos\\CSHARP\\Hawks_Consultorio\\Hawks_Consultorio\\HC.Core.Shared\\ModelViews\\NovoEndereco.cs",
-              "RelativeDocumentMoniker": "HC.Core.Shared\\ModelViews\\NovoEndereco.cs",
-              "ToolTip": "C:\\Users\\Meu_Notebook\\Documents\\Projetos\\CSHARP\\Hawks_Consultorio\\Hawks_Consultorio\\HC.Core.Shared\\ModelViews\\NovoEndereco.cs",
-              "RelativeToolTip": "HC.Core.Shared\\ModelViews\\NovoEndereco.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAfAAAA",
+              "Title": "ClienteRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Meu_Notebook\\Documents\\Projetos\\CSHARP\\Hawks_Consultorio\\Hawks_Consultorio\\HC.Data\\Repository\\ClienteRepository.cs",
+              "RelativeDocumentMoniker": "HC.Data\\Repository\\ClienteRepository.cs",
+              "ToolTip": "C:\\Users\\Meu_Notebook\\Documents\\Projetos\\CSHARP\\Hawks_Consultorio\\Hawks_Consultorio\\HC.Data\\Repository\\ClienteRepository.cs",
+              "RelativeToolTip": "HC.Data\\Repository\\ClienteRepository.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAowB8AAAArAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-21T16:16:30.988Z",
+              "WhenOpened": "2024-07-21T23:21:41.841Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "FluenteValidationConfig.cs",
-              "DocumentMoniker": "C:\\Users\\Meu_Notebook\\Documents\\Projetos\\CSHARP\\Hawks_Consultorio\\Hawks_Consultorio\\HC.WebApi\\Configuration\\FluenteValidationConfig.cs",
-              "RelativeDocumentMoniker": "HC.WebApi\\Configuration\\FluenteValidationConfig.cs",
-              "ToolTip": "C:\\Users\\Meu_Notebook\\Documents\\Projetos\\CSHARP\\Hawks_Consultorio\\Hawks_Consultorio\\HC.WebApi\\Configuration\\FluenteValidationConfig.cs",
-              "RelativeToolTip": "HC.WebApi\\Configuration\\FluenteValidationConfig.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAABUAAAA",
+              "Title": "NovoClienteMappigProfile.cs",
+              "DocumentMoniker": "C:\\Users\\Meu_Notebook\\Documents\\Projetos\\CSHARP\\Hawks_Consultorio\\Hawks_Consultorio\\HC.Manager\\Mappings\\NovoClienteMappigProfile.cs",
+              "RelativeDocumentMoniker": "HC.Manager\\Mappings\\NovoClienteMappigProfile.cs",
+              "ToolTip": "C:\\Users\\Meu_Notebook\\Documents\\Projetos\\CSHARP\\Hawks_Consultorio\\Hawks_Consultorio\\HC.Manager\\Mappings\\NovoClienteMappigProfile.cs",
+              "RelativeToolTip": "HC.Manager\\Mappings\\NovoClienteMappigProfile.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAxwBQAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-21T16:13:47.045Z",
+              "WhenOpened": "2024-07-21T23:20:49.492Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AutoMapperConfig.cs",
+              "DocumentMoniker": "C:\\Users\\Meu_Notebook\\Documents\\Projetos\\CSHARP\\Hawks_Consultorio\\Hawks_Consultorio\\HC.WebApi\\Configuration\\AutoMapperConfig.cs",
+              "RelativeDocumentMoniker": "HC.WebApi\\Configuration\\AutoMapperConfig.cs",
+              "ToolTip": "C:\\Users\\Meu_Notebook\\Documents\\Projetos\\CSHARP\\Hawks_Consultorio\\Hawks_Consultorio\\HC.WebApi\\Configuration\\AutoMapperConfig.cs",
+              "RelativeToolTip": "HC.WebApi\\Configuration\\AutoMapperConfig.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAsAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-21T23:20:11.64Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "NovoTelefoneValidator.cs",
+              "DocumentMoniker": "C:\\Users\\Meu_Notebook\\Documents\\Projetos\\CSHARP\\Hawks_Consultorio\\Hawks_Consultorio\\HC.Manager\\Validator\\NovoTelefoneValidator.cs",
+              "RelativeDocumentMoniker": "HC.Manager\\Validator\\NovoTelefoneValidator.cs",
+              "ToolTip": "C:\\Users\\Meu_Notebook\\Documents\\Projetos\\CSHARP\\Hawks_Consultorio\\Hawks_Consultorio\\HC.Manager\\Validator\\NovoTelefoneValidator.cs",
+              "RelativeToolTip": "HC.Manager\\Validator\\NovoTelefoneValidator.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAAAA8AAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-21T23:16:31.25Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "NovoClienteValidator.cs",
+              "DocumentMoniker": "C:\\Users\\Meu_Notebook\\Documents\\Projetos\\CSHARP\\Hawks_Consultorio\\Hawks_Consultorio\\HC.Manager\\Validator\\NovoClienteValidator.cs",
+              "RelativeDocumentMoniker": "HC.Manager\\Validator\\NovoClienteValidator.cs",
+              "ToolTip": "C:\\Users\\Meu_Notebook\\Documents\\Projetos\\CSHARP\\Hawks_Consultorio\\Hawks_Consultorio\\HC.Manager\\Validator\\NovoClienteValidator.cs",
+              "RelativeToolTip": "HC.Manager\\Validator\\NovoClienteValidator.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAQwBEAAAA7AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-21T23:15:45.86Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "NovoTelefone.cs",
+              "DocumentMoniker": "C:\\Users\\Meu_Notebook\\Documents\\Projetos\\CSHARP\\Hawks_Consultorio\\Hawks_Consultorio\\HC.Core.Shared\\ModelViews\\NovoTelefone.cs",
+              "RelativeDocumentMoniker": "HC.Core.Shared\\ModelViews\\NovoTelefone.cs",
+              "ToolTip": "C:\\Users\\Meu_Notebook\\Documents\\Projetos\\CSHARP\\Hawks_Consultorio\\Hawks_Consultorio\\HC.Core.Shared\\ModelViews\\NovoTelefone.cs",
+              "RelativeToolTip": "HC.Core.Shared\\ModelViews\\NovoTelefone.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-21T23:14:53.048Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "NovoCliente.cs",
+              "DocumentMoniker": "C:\\Users\\Meu_Notebook\\Documents\\Projetos\\CSHARP\\Hawks_Consultorio\\Hawks_Consultorio\\HC.Core.Shared\\ModelViews\\NovoCliente.cs",
+              "RelativeDocumentMoniker": "HC.Core.Shared\\ModelViews\\NovoCliente.cs",
+              "ToolTip": "C:\\Users\\Meu_Notebook\\Documents\\Projetos\\CSHARP\\Hawks_Consultorio\\Hawks_Consultorio\\HC.Core.Shared\\ModelViews\\NovoCliente.cs",
+              "RelativeToolTip": "HC.Core.Shared\\ModelViews\\NovoCliente.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAAgwBwAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-21T23:14:13.63Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Cliente.cs",
+              "DocumentMoniker": "C:\\Users\\Meu_Notebook\\Documents\\Projetos\\CSHARP\\Hawks_Consultorio\\Hawks_Consultorio\\HC.Core\\Domain\\Cliente.cs",
+              "RelativeDocumentMoniker": "HC.Core\\Domain\\Cliente.cs",
+              "ToolTip": "C:\\Users\\Meu_Notebook\\Documents\\Projetos\\CSHARP\\Hawks_Consultorio\\Hawks_Consultorio\\HC.Core\\Domain\\Cliente.cs",
+              "RelativeToolTip": "HC.Core\\Domain\\Cliente.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA0AAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-21T23:03:52.73Z",
               "EditorCaption": ""
             }
           ]

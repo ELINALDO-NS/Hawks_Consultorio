@@ -48,9 +48,6 @@ namespace HC.Data.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(1)");
 
-                    b.Property<string>("Telefone")
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<DateTime?>("UltimaAtualização")
                         .HasColumnType("datetime2");
 
@@ -84,7 +81,20 @@ namespace HC.Data.Migrations
 
                     b.HasKey("ClienteId");
 
-                    b.ToTable("Endereco");
+                    b.ToTable("Enderecos");
+                });
+
+            modelBuilder.Entity("HC.Core.Domain.Telefone", b =>
+                {
+                    b.Property<int>("CLienteId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Numero")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("CLienteId", "Numero");
+
+                    b.ToTable("Tetefones");
                 });
 
             modelBuilder.Entity("HC.Core.Domain.Endereco", b =>
@@ -98,9 +108,22 @@ namespace HC.Data.Migrations
                     b.Navigation("Cliente");
                 });
 
+            modelBuilder.Entity("HC.Core.Domain.Telefone", b =>
+                {
+                    b.HasOne("HC.Core.Domain.Cliente", "CLiente")
+                        .WithMany("Telefones")
+                        .HasForeignKey("CLienteId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("CLiente");
+                });
+
             modelBuilder.Entity("HC.Core.Domain.Cliente", b =>
                 {
                     b.Navigation("Endereco");
+
+                    b.Navigation("Telefones");
                 });
 #pragma warning restore 612, 618
         }

@@ -15,7 +15,7 @@ namespace HC.Manager.Validator
             RuleFor(x => x.Nome).NotNull().NotEmpty().MinimumLength(8).MaximumLength(150);
             RuleFor(x => x.DataNascimento).NotNull().NotEmpty().GreaterThan(DateTime.Now.AddYears(-100)).LessThan(DateTime.Now);
             RuleFor(x => x.Documento).NotNull().NotEmpty().MinimumLength(4).MaximumLength(14);
-            RuleFor(x => x.Telefone).NotNull().NotEmpty().Matches("[2-9][0-9]{10}").WithMessage("O telefone tem que ter o formato [2-9][0-9]{10}");
+            RuleFor(x => x.Telefones).NotNull().NotEmpty();
             RuleFor(x => x.Endereco).SetValidator(new EnderecoValidator());
 
 
