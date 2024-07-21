@@ -3,6 +3,10 @@ using HC.Core.Shared.ModelViews;
 using HC.Manager.Interfaces;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
+using Serilog;
+using SerilogTimings;
+using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
@@ -15,10 +19,12 @@ namespace HC.WebApi.Controllers
     public class ClientesController : ControllerBase
     {
        private readonly IClienteManager _clienteManager;
+       private readonly ILogger<ClientesController> _logger;
 
-        public ClientesController(IClienteManager clienteManager)
+        public ClientesController(IClienteManager clienteManager, ILogger<ClientesController> logger)
         {
             _clienteManager = clienteManager;
+            _logger = logger;
         }
         /// <summary>
         /// Retorna todos o cliente cadastrados na base
@@ -29,6 +35,7 @@ namespace HC.WebApi.Controllers
         [ProducesResponseType(typeof(ProblemDetails),StatusCodes.Status500InternalServerError)]
         public async Task<IActionResult> Get()
         {
+            
             return Ok( await _clienteManager.GetClientesAsync());
         }
 
@@ -43,6 +50,7 @@ namespace HC.WebApi.Controllers
         [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status500InternalServerError)]
         public async Task<IActionResult> Get(int id)
         {
+           
             return Ok(await _clienteManager.GetClienteAsync(id));
         }
 
@@ -56,8 +64,12 @@ namespace HC.WebApi.Controllers
         [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status500InternalServerError)]
         public async Task<IActionResult> Post (NovoCliente novocliente)
         {
-            var ClienteInserido = await _clienteManager.InsertClienteAsync(novocliente);
-
+            _logger.LogInformation("Objeto recebido {@novocliente}",novocliente);
+            Cliente ClienteInserido;
+            using (Operation.Time("Tempo de adição do cliente "))
+            {
+                 ClienteInserido = await _clienteManager.InsertClienteAsync(novocliente);
+            }
             return CreatedAtAction(nameof(Get),new {id = ClienteInserido.Id}, ClienteInserido);
         }
 

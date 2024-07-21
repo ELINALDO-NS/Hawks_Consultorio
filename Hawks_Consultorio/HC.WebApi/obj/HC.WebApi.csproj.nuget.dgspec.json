@@ -433,6 +433,30 @@
             "fluentvalidation.aspnetcore": {
               "target": "Package",
               "version": "[11.3.0, )"
+            },
+            "serilog.aspnetcore": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
+            "serilog.formatting.compact": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "serilog.settings.configuration": {
+              "target": "Package",
+              "version": "[8.0.2, )"
+            },
+            "serilog.sinks.async": {
+              "target": "Package",
+              "version": "[2.0.0, )"
+            },
+            "serilog.sinks.file": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "serilogtimings": {
+              "target": "Package",
+              "version": "[3.1.0, )"
             }
           },
           "imports": [

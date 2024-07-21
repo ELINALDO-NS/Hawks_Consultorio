@@ -16,6 +16,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
+using Serilog;
 using System;
 using System.Collections.Generic;
 using System.Globalization;
@@ -43,7 +44,7 @@ namespace HC.WebApi
             services.AddSwaggerConfiguration();
             services.AddDatabaseConfiguration(Configuration);
             services.UseDependencyInjectionConfiguration();
-
+            services.AddSerilog();
 
 
         }
