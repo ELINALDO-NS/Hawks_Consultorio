@@ -27,7 +27,7 @@ namespace HC.WebApi.Controllers
             _logger = logger;
         }
         /// <summary>
-        /// Retorna todos o cliente cadastrados na base
+        /// Retorna todos os cliente cadastrados na base
         /// </summary>
 
         [HttpGet]

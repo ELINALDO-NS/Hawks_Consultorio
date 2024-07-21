@@ -6,7 +6,7 @@
     <members>
         <member name="M:HC.WebApi.Controllers.ClientesController.Get">
             <summary>
-            Retorna todos o cliente cadastrados na base
+            Retorna todos os cliente cadastrados na base
             </summary>
         </member>
         <member name="M:HC.WebApi.Controllers.ClientesController.Get(System.Int32)">

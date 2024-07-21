@@ -39,5 +39,23 @@
             </summary>
             <example>11111</example>
         </member>
+        <member name="P:HC.Core.Shared.ModelViews.NovoEndereco.CEP">
+            <example>41000000</example>
+        </member>
+        <member name="P:HC.Core.Shared.ModelViews.NovoEndereco.Estado">
+            <example>BA</example>
+        </member>
+        <member name="P:HC.Core.Shared.ModelViews.NovoEndereco.Cidade">
+            <example>Salvador</example>
+        </member>
+        <member name="P:HC.Core.Shared.ModelViews.NovoEndereco.Logradouro">
+            <example>Avenida abc</example>
+        </member>
+        <member name="P:HC.Core.Shared.ModelViews.NovoEndereco.Numero">
+            <example>198</example>
+        </member>
+        <member name="P:HC.Core.Shared.ModelViews.NovoEndereco.Complemento">
+            <example>Ao lado od posto</example>
+        </member>
     </members>
 </doc>
