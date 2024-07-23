@@ -20,6 +20,9 @@ namespace HC.WebApi.Configuration
                     p.RegisterValidatorsFromAssemblyContaining<AlteraClienteValidator>();
                     p.RegisterValidatorsFromAssemblyContaining<NovoClienteValidator>();
                     p.RegisterValidatorsFromAssemblyContaining<NovoTelefoneValidator>();
+                    p.RegisterValidatorsFromAssemblyContaining<NovoMedicoValidator>();
+                    p.RegisterValidatorsFromAssemblyContaining<ReferenciaEspecialidadeValidator>();
+
 
                     p.ValidatorOptions.LanguageManager.Culture = new CultureInfo("pt-BR");
 

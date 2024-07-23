@@ -22,6 +22,21 @@ namespace HC.Data.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
+            modelBuilder.Entity("EspecialidadeMedico", b =>
+                {
+                    b.Property<int>("EspecialidadesId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("MedicosId")
+                        .HasColumnType("int");
+
+                    b.HasKey("EspecialidadesId", "MedicosId");
+
+                    b.HasIndex("MedicosId");
+
+                    b.ToTable("EspecialidadeMedico");
+                });
+
             modelBuilder.Entity("HC.Core.Domain.Cliente", b =>
                 {
                     b.Property<int>("Id")
@@ -84,6 +99,41 @@ namespace HC.Data.Migrations
                     b.ToTable("Enderecos");
                 });
 
+            modelBuilder.Entity("HC.Core.Domain.Especialidade", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<string>("Descricao")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Especialidades");
+                });
+
+            modelBuilder.Entity("HC.Core.Domain.Medico", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<string>("CRM")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Nome")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Medicos");
+                });
+
             modelBuilder.Entity("HC.Core.Domain.Telefone", b =>
                 {
                     b.Property<int>("CLienteId")
@@ -95,6 +145,21 @@ namespace HC.Data.Migrations
                     b.HasKey("CLienteId", "Numero");
 
                     b.ToTable("Tetefones");
+                });
+
+            modelBuilder.Entity("EspecialidadeMedico", b =>
+                {
+                    b.HasOne("HC.Core.Domain.Especialidade", null)
+                        .WithMany()
+                        .HasForeignKey("EspecialidadesId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("HC.Core.Domain.Medico", null)
+                        .WithMany()
+                        .HasForeignKey("MedicosId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("HC.Core.Domain.Endereco", b =>

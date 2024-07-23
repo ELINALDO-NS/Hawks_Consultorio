@@ -12,6 +12,8 @@ namespace HC.Data.Context
         public DbSet<Cliente> Clientes { get; set; }
         public DbSet<Endereco> Enderecos { get; set; }
         public DbSet<Telefone> Tetefones { get; set; }
+        public DbSet<Medico> Medicos { get; set; }
+        public DbSet<Especialidade> Especialidades { get; set; }
 
         public HCContext(DbContextOptions options) : base(options)
         {
