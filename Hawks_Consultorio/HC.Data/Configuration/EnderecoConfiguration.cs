@@ -14,6 +14,10 @@ namespace HC.Data.Configuration
         public void Configure(EntityTypeBuilder<Endereco> builder)
         {
             builder.HasKey(e => e.ClienteId);
+            builder.Property(s => s.Estado).HasConversion(
+               s => s.ToString(),
+               s => (Estado)Enum.Parse(typeof(Estado), s)
+               );
         }
     }
 }

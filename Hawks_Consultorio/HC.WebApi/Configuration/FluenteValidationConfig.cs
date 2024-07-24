@@ -3,7 +3,10 @@ using HC.Manager.Validator;
 using MicroElements.Swashbuckle.FluentValidation.AspNetCore;
 using Microsoft.Extensions.DependencyInjection;
 using Newtonsoft.Json;
+using Newtonsoft.Json.Converters;
+using System.ComponentModel;
 using System.Globalization;
+using System.Text.Json.Serialization;
 
 
 namespace HC.WebApi.Configuration
@@ -13,7 +16,16 @@ namespace HC.WebApi.Configuration
         public static void AddFluenteValidationConfiguration(this IServiceCollection services)
         {
             services.AddControllers().
-                AddNewtonsoftJson(x => x.SerializerSettings.ReferenceLoopHandling = ReferenceLoopHandling.Ignore).
+                AddNewtonsoftJson(x =>
+                {
+                    x.SerializerSettings.ReferenceLoopHandling = ReferenceLoopHandling.Ignore;
+                    x.SerializerSettings.Converters.Add(new StringEnumConverter());
+                }
+                ).
+                AddJsonOptions(x =>
+                {
+                    x.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter());
+                }).
                 AddFluentValidation(p =>
                 {
                     p.RegisterValidatorsFromAssemblyContaining<NovoClienteValidator>();
@@ -28,8 +40,8 @@ namespace HC.WebApi.Configuration
                     p.ValidatorOptions.LanguageManager.Culture = new CultureInfo("pt-BR");
 
                 });
-           
-           
+
+
         }
     }
 }

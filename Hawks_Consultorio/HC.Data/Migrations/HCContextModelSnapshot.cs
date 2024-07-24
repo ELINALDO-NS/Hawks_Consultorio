@@ -61,7 +61,7 @@ namespace HC.Data.Migrations
 
                     b.Property<string>("Sexo")
                         .IsRequired()
-                        .HasColumnType("nvarchar(1)");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime?>("UltimaAtualização")
                         .HasColumnType("datetime2");
@@ -86,6 +86,7 @@ namespace HC.Data.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Estado")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Logradouro")

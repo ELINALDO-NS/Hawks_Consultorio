@@ -15,6 +15,11 @@ namespace HC.Data.Configuration
         public void Configure(EntityTypeBuilder<Cliente> builder)
         {
            builder.Property(n => n.Nome).HasMaxLength(200).IsRequired();
+            builder.Property(s => s.Sexo).HasConversion(
+                s => s.ToString(),
+                s => (Sexo)Enum.Parse(typeof(Sexo),s)
+                );
+
            
         }
     }

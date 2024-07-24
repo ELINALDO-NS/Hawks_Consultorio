@@ -25,7 +25,7 @@ namespace HC.Core.Shared.ModelViews
         /// Sexo do cliente: M ou F
         /// </summary>
         /// <example>F</example>
-        public char Sexo { get; set; }
+        public SexoView Sexo { get; set; }
         
         public ICollection<NovoTelefone> Telefones { get; set; }
         /// <summary>

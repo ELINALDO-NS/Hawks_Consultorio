@@ -11,7 +11,7 @@ namespace HC.Manager.Validator
     {
         public NovoClienteValidator()
         {
-            RuleFor(x => x.Sexo).NotNull().NotEmpty().Must(IsMorF).WithMessage("O sexo precisa ser M ou F");
+            RuleFor(x => x.Sexo).NotNull();
             RuleFor(x => x.Nome).NotNull().NotEmpty().MinimumLength(8).MaximumLength(150);
             RuleFor(x => x.DataNascimento).NotNull().NotEmpty().GreaterThan(DateTime.Now.AddYears(-100)).LessThan(DateTime.Now);
             RuleFor(x => x.Documento).NotNull().NotEmpty().MinimumLength(4).MaximumLength(14);
@@ -22,10 +22,6 @@ namespace HC.Manager.Validator
 
         }
 
-        private bool IsMorF(char sexo)
-        {
 
-            return sexo == 'M' || sexo == 'F';
-        }
     }
 }

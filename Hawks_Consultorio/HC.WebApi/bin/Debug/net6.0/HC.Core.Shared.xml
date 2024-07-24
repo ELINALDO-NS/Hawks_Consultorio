@@ -36,9 +36,6 @@
         <member name="P:HC.Core.Shared.ModelViews.NovoEndereco.CEP">
             <example>41000000</example>
         </member>
-        <member name="P:HC.Core.Shared.ModelViews.NovoEndereco.Estado">
-            <example>BA</example>
-        </member>
         <member name="P:HC.Core.Shared.ModelViews.NovoEndereco.Cidade">
             <example>Salvador</example>
         </member>

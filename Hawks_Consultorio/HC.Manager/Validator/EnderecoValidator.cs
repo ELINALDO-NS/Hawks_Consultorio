@@ -12,7 +12,7 @@ namespace HC.Manager.Validator
     {
         public EnderecoValidator()
         {
-            RuleFor(c => c.Cidade).NotEmpty().NotNull().MaximumLength(100);
+            RuleFor(c => c.Cidade).NotNull();
         }
     }
 }
