@@ -1,6 +1,6 @@
 ﻿using HC.Core.Domain;
 using HC.Core.Shared.ModelViews;
-using HC.Manager.Interfaces;
+using HC.Manager.Interfaces.Managers;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;

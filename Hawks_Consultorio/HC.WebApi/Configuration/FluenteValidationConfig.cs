@@ -21,6 +21,7 @@ namespace HC.WebApi.Configuration
                     p.RegisterValidatorsFromAssemblyContaining<NovoClienteValidator>();
                     p.RegisterValidatorsFromAssemblyContaining<NovoTelefoneValidator>();
                     p.RegisterValidatorsFromAssemblyContaining<NovoMedicoValidator>();
+                    p.RegisterValidatorsFromAssemblyContaining<AlteraMedicoValidator>();
                     p.RegisterValidatorsFromAssemblyContaining<ReferenciaEspecialidadeValidator>();
 
 

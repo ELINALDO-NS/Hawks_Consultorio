@@ -110,4 +110,12 @@ C:\Users\Meu_Notebook\Documents\Projetos\CSHARP\Hawks_Consultorio\Hawks_Consulto
 C:\Users\Meu_Notebook\Documents\Projetos\CSHARP\Hawks_Consultorio\Hawks_Consultorio\HC.WebApi\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
 C:\Users\Meu_Notebook\Documents\Projetos\CSHARP\Hawks_Consultorio\Hawks_Consultorio\HC.WebApi\bin\Debug\net6.0\Newtonsoft.Json.dll
 C:\Users\Meu_Notebook\Documents\Projetos\CSHARP\Hawks_Consultorio\Hawks_Consultorio\HC.WebApi\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
-C:\Users\Meu_Notebook\Documents\Projetos\CSHARP\Hawks_Consultorio\Hawks_Consultorio\HC.WebApi\bin\Debug\net6.0\Log20240722.json
+C:\Users\Meu_Notebook\Documents\Projetos\CSHARP\Hawks_Consultorio\Hawks_Consultorio\HC.WebApi\bin\Debug\net6.0\Log20240723.json
+C:\Users\Meu_Notebook\Documents\Projetos\CSHARP\Hawks_Consultorio\Hawks_Consultorio\HC.WebApi\bin\Debug\net6.0\Log20240723_001.json
+C:\Users\Meu_Notebook\Documents\Projetos\CSHARP\Hawks_Consultorio\Hawks_Consultorio\HC.WebApi\bin\Debug\net6.0\Log20240723_002.json
+C:\Users\Meu_Notebook\Documents\Projetos\CSHARP\Hawks_Consultorio\Hawks_Consultorio\HC.WebApi\bin\Debug\net6.0\Log20240723_003.json
+C:\Users\Meu_Notebook\Documents\Projetos\CSHARP\Hawks_Consultorio\Hawks_Consultorio\HC.WebApi\bin\Debug\net6.0\Log20240723_004.json
+C:\Users\Meu_Notebook\Documents\Projetos\CSHARP\Hawks_Consultorio\Hawks_Consultorio\HC.WebApi\bin\Debug\net6.0\Log20240723_005.json
+C:\Users\Meu_Notebook\Documents\Projetos\CSHARP\Hawks_Consultorio\Hawks_Consultorio\HC.WebApi\bin\Debug\net6.0\Log20240723_006.json
+C:\Users\Meu_Notebook\Documents\Projetos\CSHARP\Hawks_Consultorio\Hawks_Consultorio\HC.WebApi\bin\Debug\net6.0\Log20240723_007.json
+C:\Users\Meu_Notebook\Documents\Projetos\CSHARP\Hawks_Consultorio\Hawks_Consultorio\HC.WebApi\bin\Debug\net6.0\Log20240723_008.json

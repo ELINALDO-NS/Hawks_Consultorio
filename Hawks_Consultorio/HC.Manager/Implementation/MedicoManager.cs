@@ -1,7 +1,8 @@
 ﻿using AutoMapper;
 using HC.Core.Domain;
 using HC.Core.Shared.ModelViews;
-using HC.Manager.Interfaces;
+using HC.Manager.Interfaces.Managers;
+using HC.Manager.Interfaces.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;

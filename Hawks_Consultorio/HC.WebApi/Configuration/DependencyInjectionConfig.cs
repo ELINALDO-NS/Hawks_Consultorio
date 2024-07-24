@@ -1,6 +1,7 @@
 ﻿using HC.Data.Repository;
 using HC.Manager.Implementation;
-using HC.Manager.Interfaces;
+using HC.Manager.Interfaces.Managers;
+using HC.Manager.Interfaces.Repositories;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace HC.WebApi.Configuration
@@ -13,6 +14,8 @@ namespace HC.WebApi.Configuration
             services.AddScoped<IClienteManager, ClienteManager>();
             services.AddScoped<IMedicoRepository, MedicoRepository>();
             services.AddScoped<IMedicoManager, MedicoManager>();
+            services.AddScoped<IEspecialidadeRepository, EspecialidadeRepository>();
+            services.AddScoped<IEspecialidadeManager, EspecialidadeManager>();
            
         }
     }

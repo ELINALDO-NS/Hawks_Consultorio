@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HC.Manager.Interfaces
+namespace HC.Manager.Interfaces.Repositories
 {
     public interface IMedicoRepository
     {

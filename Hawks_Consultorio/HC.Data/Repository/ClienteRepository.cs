@@ -1,6 +1,6 @@
 ﻿using HC.Core.Domain;
 using HC.Data.Context;
-using HC.Manager.Interfaces;
+using HC.Manager.Interfaces.Repositories;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
