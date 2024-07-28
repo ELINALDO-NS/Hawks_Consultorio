@@ -1,4 +1,4 @@
-﻿using HC.Core.Shared.ModelViews;
+﻿using HC.Core.Shared.ModelViews.Medico;
 using System;
 using System.Collections.Generic;
 using System.Linq;

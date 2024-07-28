@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
 using HC.Core.Domain;
-using HC.Core.Shared.ModelViews;
+using HC.Core.Shared.ModelViews.Cliente;
 using HC.Manager.Interfaces.Managers;
 using HC.Manager.Interfaces.Repositories;
 using System;
@@ -23,9 +23,10 @@ namespace HC.Manager.Implementation
             _mapper = mapper;
         }
 
-        public async Task<IEnumerable<Cliente>> GetClientesAsync()
+        public async Task<IEnumerable<ClienteView>> GetClientesAsync()
         {
-            return await _clienteRepository.GetClientesAsync();
+            var clientes = await _clienteRepository.GetClientesAsync();
+            return _mapper.Map<IEnumerable<Cliente>, IEnumerable<ClienteView>>(clientes);
         }
 
         public async Task<Cliente> GetClienteAsync(int id)

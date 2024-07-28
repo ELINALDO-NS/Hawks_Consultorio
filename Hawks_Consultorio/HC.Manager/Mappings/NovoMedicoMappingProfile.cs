@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using HC.Core.Domain;
-using HC.Core.Shared.ModelViews;
+using HC.Core.Shared.ModelViews.Especialidade;
+using HC.Core.Shared.ModelViews.Medico;
 using System;
 using System.Collections.Generic;
 using System.Linq;

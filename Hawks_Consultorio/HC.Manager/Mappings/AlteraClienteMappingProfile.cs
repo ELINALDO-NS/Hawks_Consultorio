@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
 using HC.Core.Domain;
-using HC.Core.Shared.ModelViews;
+using HC.Core.Shared.ModelViews.Cliente;
 using System;
 using System.Collections.Generic;
 using System.Linq;

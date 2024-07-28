@@ -1,4 +1,5 @@
 ﻿using HC.Core.Domain;
+using HC.Core.Shared.ModelViews.Cliente;
 using System;
 using System.Collections.Generic;
 using System.Text;

@@ -1,5 +1,5 @@
 ﻿using FluentValidation;
-using HC.Core.Shared.ModelViews;
+using HC.Core.Shared.ModelViews.Medico;
 using HC.Manager.Interfaces.Repositories;
 using System;
 using System.Collections.Generic;

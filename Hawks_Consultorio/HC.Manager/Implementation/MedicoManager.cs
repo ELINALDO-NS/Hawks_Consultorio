@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
 using HC.Core.Domain;
-using HC.Core.Shared.ModelViews;
+using HC.Core.Shared.ModelViews.Medico;
 using HC.Manager.Interfaces.Managers;
 using HC.Manager.Interfaces.Repositories;
 using System;

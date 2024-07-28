@@ -1,0 +1,17 @@
+C:\Users\Meu_Notebook\Documents\Projetos\CSHARP\Hawks_Consultorio\Hawks_Consultorio\HC.FakeData\obj\Debug\net6.0\HC.FakeData.csproj.AssemblyReference.cache
+C:\Users\Meu_Notebook\Documents\Projetos\CSHARP\Hawks_Consultorio\Hawks_Consultorio\HC.FakeData\obj\Debug\net6.0\HC.FakeData.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Meu_Notebook\Documents\Projetos\CSHARP\Hawks_Consultorio\Hawks_Consultorio\HC.FakeData\obj\Debug\net6.0\HC.FakeData.AssemblyInfoInputs.cache
+C:\Users\Meu_Notebook\Documents\Projetos\CSHARP\Hawks_Consultorio\Hawks_Consultorio\HC.FakeData\obj\Debug\net6.0\HC.FakeData.AssemblyInfo.cs
+C:\Users\Meu_Notebook\Documents\Projetos\CSHARP\Hawks_Consultorio\Hawks_Consultorio\HC.FakeData\obj\Debug\net6.0\HC.FakeData.csproj.CoreCompileInputs.cache
+C:\Users\Meu_Notebook\Documents\Projetos\CSHARP\Hawks_Consultorio\Hawks_Consultorio\HC.FakeData\obj\Debug\net6.0\HC.FakeData.sourcelink.json
+C:\Users\Meu_Notebook\Documents\Projetos\CSHARP\Hawks_Consultorio\Hawks_Consultorio\HC.FakeData\bin\Debug\net6.0\HC.FakeData.deps.json
+C:\Users\Meu_Notebook\Documents\Projetos\CSHARP\Hawks_Consultorio\Hawks_Consultorio\HC.FakeData\bin\Debug\net6.0\HC.FakeData.dll
+C:\Users\Meu_Notebook\Documents\Projetos\CSHARP\Hawks_Consultorio\Hawks_Consultorio\HC.FakeData\bin\Debug\net6.0\HC.FakeData.pdb
+C:\Users\Meu_Notebook\Documents\Projetos\CSHARP\Hawks_Consultorio\Hawks_Consultorio\HC.FakeData\bin\Debug\net6.0\HC.Core.Shared.dll
+C:\Users\Meu_Notebook\Documents\Projetos\CSHARP\Hawks_Consultorio\Hawks_Consultorio\HC.FakeData\bin\Debug\net6.0\HC.Core.Shared.pdb
+C:\Users\Meu_Notebook\Documents\Projetos\CSHARP\Hawks_Consultorio\Hawks_Consultorio\HC.FakeData\bin\Debug\net6.0\HC.Core.Shared.xml
+C:\Users\Meu_Notebook\Documents\Projetos\CSHARP\Hawks_Consultorio\Hawks_Consultorio\HC.FakeData\obj\Debug\net6.0\HC.FakeD.F75AC66D.Up2Date
+C:\Users\Meu_Notebook\Documents\Projetos\CSHARP\Hawks_Consultorio\Hawks_Consultorio\HC.FakeData\obj\Debug\net6.0\HC.FakeData.dll
+C:\Users\Meu_Notebook\Documents\Projetos\CSHARP\Hawks_Consultorio\Hawks_Consultorio\HC.FakeData\obj\Debug\net6.0\refint\HC.FakeData.dll
+C:\Users\Meu_Notebook\Documents\Projetos\CSHARP\Hawks_Consultorio\Hawks_Consultorio\HC.FakeData\obj\Debug\net6.0\HC.FakeData.pdb
+C:\Users\Meu_Notebook\Documents\Projetos\CSHARP\Hawks_Consultorio\Hawks_Consultorio\HC.FakeData\obj\Debug\net6.0\ref\HC.FakeData.dll

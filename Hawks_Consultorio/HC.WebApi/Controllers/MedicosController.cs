@@ -1,4 +1,5 @@
-﻿using HC.Core.Shared.ModelViews;
+﻿using HC.Core.Shared.ModelViews.Erro;
+using HC.Core.Shared.ModelViews.Medico;
 using HC.Manager.Interfaces.Managers;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;

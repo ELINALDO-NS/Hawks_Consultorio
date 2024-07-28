@@ -1,6 +1,8 @@
 ﻿using AutoMapper;
 using HC.Core.Domain;
-using HC.Core.Shared.ModelViews;
+using HC.Core.Shared.ModelViews.Cliente;
+using HC.Core.Shared.ModelViews.Endereco;
+using HC.Core.Shared.ModelViews.Telefone;
 using HC.Manager.Validator;
 using System;
 using System.Collections.Generic;
@@ -17,8 +19,12 @@ namespace HC.Manager.Mappings
             CreateMap<NovoCliente, Cliente>().
             ForMember(d => d.Criacao , o => o.MapFrom(x=> DateTime.Now.Date)).
             ForMember(d => d.DataNascimento , o => o.MapFrom(x=> x.DataNascimento.Date));
+
             CreateMap<NovoEndereco, Endereco>();
             CreateMap<NovoTelefone, Telefone>();
+            CreateMap<Cliente, ClienteView>();
+            CreateMap<Endereco, EnderecoView>();
+            CreateMap<Telefone, TelefoneView>();
         }
     }
 }

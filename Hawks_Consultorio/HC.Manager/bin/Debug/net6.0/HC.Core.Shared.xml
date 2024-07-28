@@ -4,51 +4,51 @@
         <name>HC.Core.Shared</name>
     </assembly>
     <members>
-        <member name="T:HC.Core.Shared.ModelViews.NovoCliente">
+        <member name="T:HC.Core.Shared.ModelViews.Cliente.NovoCliente">
             <summary>
             Objeto utilizado para inserção de um novo cliente
             </summary>
         </member>
-        <member name="P:HC.Core.Shared.ModelViews.NovoCliente.Nome">
+        <member name="P:HC.Core.Shared.ModelViews.Cliente.NovoCliente.Nome">
             <summary>
             Nome do cliente
             </summary>
             <example>Maria Luiza Dantas</example>
         </member>
-        <member name="P:HC.Core.Shared.ModelViews.NovoCliente.DataNascimento">
+        <member name="P:HC.Core.Shared.ModelViews.Cliente.NovoCliente.DataNascimento">
             <summary>
             Data de Nascimento
             </summary>
             <example>1995-01-05</example>
         </member>
-        <member name="P:HC.Core.Shared.ModelViews.NovoCliente.Sexo">
+        <member name="P:HC.Core.Shared.ModelViews.Cliente.NovoCliente.Sexo">
             <summary>
             Sexo do cliente: M ou F
             </summary>
             <example>F</example>
         </member>
-        <member name="P:HC.Core.Shared.ModelViews.NovoCliente.Documento">
+        <member name="P:HC.Core.Shared.ModelViews.Cliente.NovoCliente.Documento">
             <summary>
             Documento do cliente: CNH,CPF ou RG 
             </summary>
             <example>11111</example>
         </member>
-        <member name="P:HC.Core.Shared.ModelViews.NovoEndereco.CEP">
+        <member name="P:HC.Core.Shared.ModelViews.Endereco.NovoEndereco.CEP">
             <example>41000000</example>
         </member>
-        <member name="P:HC.Core.Shared.ModelViews.NovoEndereco.Cidade">
+        <member name="P:HC.Core.Shared.ModelViews.Endereco.NovoEndereco.Cidade">
             <example>Salvador</example>
         </member>
-        <member name="P:HC.Core.Shared.ModelViews.NovoEndereco.Logradouro">
+        <member name="P:HC.Core.Shared.ModelViews.Endereco.NovoEndereco.Logradouro">
             <example>Avenida abc</example>
         </member>
-        <member name="P:HC.Core.Shared.ModelViews.NovoEndereco.Numero">
+        <member name="P:HC.Core.Shared.ModelViews.Endereco.NovoEndereco.Numero">
             <example>198</example>
         </member>
-        <member name="P:HC.Core.Shared.ModelViews.NovoEndereco.Complemento">
+        <member name="P:HC.Core.Shared.ModelViews.Endereco.NovoEndereco.Complemento">
             <example>Ao lado do posto</example>
         </member>
-        <member name="P:HC.Core.Shared.ModelViews.NovoTelefone.Numero">
+        <member name="P:HC.Core.Shared.ModelViews.Telefone.NovoTelefone.Numero">
             <summary>
             Telefone do cliente
             </summary>

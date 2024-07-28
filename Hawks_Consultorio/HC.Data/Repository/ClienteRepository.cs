@@ -1,4 +1,5 @@
 ﻿using HC.Core.Domain;
+using HC.Core.Shared.ModelViews.Cliente;
 using HC.Data.Context;
 using HC.Manager.Interfaces.Repositories;
 using Microsoft.EntityFrameworkCore;

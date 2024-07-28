@@ -1,5 +1,5 @@
 ﻿using FluentValidation;
-using HC.Core.Shared.ModelViews;
+using HC.Core.Shared.ModelViews.Especialidade;
 using HC.Manager.Interfaces.Managers;
 using HC.Manager.Interfaces.Repositories;
 using System;

@@ -1,6 +1,6 @@
 ﻿using FluentValidation;
 using FluentValidation.Validators;
-using HC.Core.Shared.ModelViews;
+using HC.Core.Shared.ModelViews.Telefone;
 using System;
 using System.Collections.Generic;
 using System.Linq;
