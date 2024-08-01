@@ -29,26 +29,31 @@ namespace HC.Manager.Implementation
             return _mapper.Map<IEnumerable<Cliente>, IEnumerable<ClienteView>>(clientes);
         }
 
-        public async Task<Cliente> GetClienteAsync(int id)
+        public async Task<ClienteView> GetClienteAsync(int id)
         {
-            return await _clienteRepository.GetClienteAsync(id);
+            var cliente = await _clienteRepository.GetClienteAsync(id);
+            return _mapper.Map<Cliente, ClienteView>(cliente);
         }
 
-        public async Task DeleteClienteAsync(int id)
+        public async Task<ClienteView> DeleteClienteAsync(int id)
         {
-          await _clienteRepository.DeleteClienteAsync(id);
+            var clienteremovido = await _clienteRepository.DeleteClienteAsync(id);
+            return _mapper.Map<ClienteView>(clienteremovido);
+
         }
 
-        public async Task<Cliente> InsertClienteAsync(NovoCliente  novocliente)
+        public async Task<ClienteView> InsertClienteAsync(NovoCliente  novocliente)
         {
             var cliente = _mapper.Map<Cliente>(novocliente);
-            return await _clienteRepository.InsertClienteAsync(cliente);
+            var clienteretornado = await _clienteRepository.InsertClienteAsync(cliente);
+            return _mapper.Map<ClienteView>(clienteretornado);
         }
 
-        public async Task<Cliente> UpdateClienteAsync(AlteraCliente alteracliente)
+        public async Task<ClienteView> UpdateClienteAsync(AlteraCliente alteracliente)
         {
             var cliente = _mapper.Map<Cliente>(alteracliente);
-           return await _clienteRepository.UpdateClienteAsync(cliente);
+            var clienteretornado = await _clienteRepository.UpdateClienteAsync(cliente);
+            return _mapper.Map<ClienteView>(clienteretornado);
         }
     }
 }

@@ -3,7 +3,7 @@
     public class NovoEndereco
     {
         /// <example>41000000</example>
-        public string CEP { get; set; }
+        public int CEP { get; set; }
         public EstadoView Estado { get; set; }
         /// <example>Salvador</example>
         public string Cidade { get; set; }

@@ -10,9 +10,9 @@ namespace HC.Manager.Interfaces.Repositories
     public interface IClienteRepository
     {
         Task<IEnumerable<Cliente>> GetClientesAsync();
-        Task<Cliente> GetClienteAsync(int id);
-        Task DeleteClienteAsync(int id);
+        Task<Cliente> GetClienteAsync(int id);       
         Task<Cliente> InsertClienteAsync(Cliente cliente);
         Task<Cliente> UpdateClienteAsync(Cliente cliente);
+        Task<Cliente> DeleteClienteAsync(int id);
     }
 }

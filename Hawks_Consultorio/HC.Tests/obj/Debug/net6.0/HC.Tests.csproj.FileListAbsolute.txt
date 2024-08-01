@@ -101,12 +101,6 @@ C:\Users\Meu_Notebook\Documents\Projetos\CSHARP\Hawks_Consultorio\Hawks_Consulto
 C:\Users\Meu_Notebook\Documents\Projetos\CSHARP\Hawks_Consultorio\Hawks_Consultorio\HC.Tests\bin\Debug\net6.0\HC.WebApi.runtimeconfig.json
 C:\Users\Meu_Notebook\Documents\Projetos\CSHARP\Hawks_Consultorio\Hawks_Consultorio\HC.Tests\bin\Debug\net6.0\appsettings.Development.json
 C:\Users\Meu_Notebook\Documents\Projetos\CSHARP\Hawks_Consultorio\Hawks_Consultorio\HC.Tests\bin\Debug\net6.0\appsettings.json
-C:\Users\Meu_Notebook\Documents\Projetos\CSHARP\Hawks_Consultorio\Hawks_Consultorio\HC.Tests\bin\Debug\net6.0\Log20240724.json
-C:\Users\Meu_Notebook\Documents\Projetos\CSHARP\Hawks_Consultorio\Hawks_Consultorio\HC.Tests\bin\Debug\net6.0\Log20240724_001.json
-C:\Users\Meu_Notebook\Documents\Projetos\CSHARP\Hawks_Consultorio\Hawks_Consultorio\HC.Tests\bin\Debug\net6.0\Log20240724_002.json
-C:\Users\Meu_Notebook\Documents\Projetos\CSHARP\Hawks_Consultorio\Hawks_Consultorio\HC.Tests\bin\Debug\net6.0\Log20240724_003.json
-C:\Users\Meu_Notebook\Documents\Projetos\CSHARP\Hawks_Consultorio\Hawks_Consultorio\HC.Tests\bin\Debug\net6.0\Log20240724_004.json
-C:\Users\Meu_Notebook\Documents\Projetos\CSHARP\Hawks_Consultorio\Hawks_Consultorio\HC.Tests\bin\Debug\net6.0\Log20240724_005.json
 C:\Users\Meu_Notebook\Documents\Projetos\CSHARP\Hawks_Consultorio\Hawks_Consultorio\HC.Tests\bin\Debug\net6.0\HC.WebApi.exe
 C:\Users\Meu_Notebook\Documents\Projetos\CSHARP\Hawks_Consultorio\Hawks_Consultorio\HC.Tests\bin\Debug\net6.0\AutoMapper.dll
 C:\Users\Meu_Notebook\Documents\Projetos\CSHARP\Hawks_Consultorio\Hawks_Consultorio\HC.Tests\bin\Debug\net6.0\Bogus.dll

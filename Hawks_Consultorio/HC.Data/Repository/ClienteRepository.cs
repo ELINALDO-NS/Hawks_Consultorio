@@ -56,14 +56,16 @@ namespace HC.Data.Repository
             return clienteConsulltado;
         }
 
-        public async Task DeleteClienteAsync(int id)
+        public async Task<Cliente> DeleteClienteAsync(int id)
         {
             var clienteConsulltado = _context.Clientes.Find(id);
-            if (clienteConsulltado != null)
+            if (clienteConsulltado == null)
             {
-                _context.Remove(clienteConsulltado);
-                await _context.SaveChangesAsync();
+                return null ;
             }
+            var clienteremovido =  _context.Clientes.Remove(clienteConsulltado);
+            await _context.SaveChangesAsync();
+            return clienteremovido.Entity;
 
         }
     }

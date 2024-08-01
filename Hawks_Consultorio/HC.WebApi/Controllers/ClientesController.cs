@@ -71,7 +71,7 @@ namespace HC.WebApi.Controllers
         public async Task<IActionResult> Post (NovoCliente novocliente)
         {
             _logger.LogInformation("Objeto recebido {@novocliente}",novocliente);
-            Cliente ClienteInserido;
+            ClienteView ClienteInserido;
             using (Operation.Time("Tempo de adição do cliente "))
             {
                  ClienteInserido = await _clienteManager.InsertClienteAsync(novocliente);
@@ -109,7 +109,11 @@ namespace HC.WebApi.Controllers
         [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status500InternalServerError)]
         public async Task<IActionResult> Delete(int id)
         {
-            await _clienteManager.DeleteClienteAsync(id);
+           var clienteExcluido =  await _clienteManager.DeleteClienteAsync(id);
+            if (clienteExcluido == null)
+            {
+                return NotFound();
+            }
             return NoContent();
         }
     }

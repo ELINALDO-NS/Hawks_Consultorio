@@ -22,7 +22,8 @@ namespace HC.Manager.Mappings
 
             CreateMap<NovoEndereco, Endereco>();
             CreateMap<NovoTelefone, Telefone>();
-            CreateMap<Cliente, ClienteView>();
+            CreateMap<NovoCliente, Cliente>();          
+            CreateMap<Cliente, ClienteView>();          
             CreateMap<Endereco, EnderecoView>();
             CreateMap<Telefone, TelefoneView>();
         }

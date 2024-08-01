@@ -1,7 +1,16 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Meu_Notebook\\Documents\\Projetos\\CSHARP\\Hawks_Consultorio\\Hawks_Consultorio\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D728A75F-8F1B-4FB7-A0AB-01C716A44921}|HC.Tests\\HC.Tests.csproj|c:\\users\\meu_notebook\\documents\\projetos\\csharp\\hawks_consultorio\\hawks_consultorio\\hc.tests\\controllers\\clientescontrollertest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D728A75F-8F1B-4FB7-A0AB-01C716A44921}|HC.Tests\\HC.Tests.csproj|solutionrelative:hc.tests\\controllers\\clientescontrollertest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93A7AC8D-0D19-427B-B151-159B66BD123C}|HC.WebApi\\HC.WebApi.csproj|c:\\users\\meu_notebook\\documents\\projetos\\csharp\\hawks_consultorio\\hawks_consultorio\\hc.webapi\\controllers\\clientescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93A7AC8D-0D19-427B-B151-159B66BD123C}|HC.WebApi\\HC.WebApi.csproj|solutionrelative:hc.webapi\\controllers\\clientescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +18,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ClientesController.cs",
+              "DocumentMoniker": "C:\\Users\\Meu_Notebook\\Documents\\Projetos\\CSHARP\\Hawks_Consultorio\\Hawks_Consultorio\\HC.WebApi\\Controllers\\ClientesController.cs",
+              "RelativeDocumentMoniker": "HC.WebApi\\Controllers\\ClientesController.cs",
+              "ToolTip": "C:\\Users\\Meu_Notebook\\Documents\\Projetos\\CSHARP\\Hawks_Consultorio\\Hawks_Consultorio\\HC.WebApi\\Controllers\\ClientesController.cs",
+              "RelativeToolTip": "HC.WebApi\\Controllers\\ClientesController.cs",
+              "ViewState": "AQIAAFEAAAAAAAAAAAAiwF8AAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-01T01:01:16.706Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ClientesControllerTest.cs",
+              "DocumentMoniker": "C:\\Users\\Meu_Notebook\\Documents\\Projetos\\CSHARP\\Hawks_Consultorio\\Hawks_Consultorio\\HC.Tests\\Controllers\\ClientesControllerTest.cs",
+              "RelativeDocumentMoniker": "HC.Tests\\Controllers\\ClientesControllerTest.cs",
+              "ToolTip": "C:\\Users\\Meu_Notebook\\Documents\\Projetos\\CSHARP\\Hawks_Consultorio\\Hawks_Consultorio\\HC.Tests\\Controllers\\ClientesControllerTest.cs",
+              "RelativeToolTip": "HC.Tests\\Controllers\\ClientesControllerTest.cs",
+              "ViewState": "AQIAAHAAAAAAAAAAAAAhwH8AAABMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-30T22:56:07.882Z",
+              "EditorCaption": ""
             }
           ]
         }
