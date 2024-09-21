@@ -1888,6 +1888,7 @@
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "Bogus": "35.6.0",
+          "HC.Core": "1.0.0",
           "HC.Core.Shared": "1.0.0"
         },
         "compile": {
@@ -4996,9 +4997,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Meu_Notebook\\Documents\\Projetos\\CSHARP\\Hawks_Consultorio\\Hawks_Consultorio\\HC.Tests\\HC.Tests.csproj",
-      "projectName": "HC.Tests",
-      "projectPath": "C:\\Users\\Meu_Notebook\\Documents\\Projetos\\CSHARP\\Hawks_Consultorio\\Hawks_Consultorio\\HC.Tests\\HC.Tests.csproj",
+      "projectUniqueName": "C:\\Users\\Meu_Notebook\\Documents\\Projetos\\CSHARP\\Hawks_Consultorio\\Hawks_Consultorio\\HC.Tests\\HC.WebApi.tests.csproj",
+      "projectName": "HC.WebApi.tests",
+      "projectPath": "C:\\Users\\Meu_Notebook\\Documents\\Projetos\\CSHARP\\Hawks_Consultorio\\Hawks_Consultorio\\HC.Tests\\HC.WebApi.tests.csproj",
       "packagesPath": "C:\\Users\\Meu_Notebook\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Meu_Notebook\\Documents\\Projetos\\CSHARP\\Hawks_Consultorio\\Hawks_Consultorio\\HC.Tests\\obj\\",
       "projectStyle": "PackageReference",
@@ -5091,15 +5092,15 @@
         "downloadDependencies": [
           {
             "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[6.0.31, 6.0.31]"
+            "version": "[6.0.33, 6.0.33]"
           },
           {
             "name": "Microsoft.NETCore.App.Ref",
-            "version": "[6.0.31, 6.0.31]"
+            "version": "[6.0.33, 6.0.33]"
           },
           {
             "name": "Microsoft.WindowsDesktop.App.Ref",
-            "version": "[6.0.31, 6.0.31]"
+            "version": "[6.0.33, 6.0.33]"
           }
         ],
         "frameworkReferences": {
@@ -5107,7 +5108,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }

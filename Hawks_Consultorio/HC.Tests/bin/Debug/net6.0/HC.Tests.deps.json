@@ -1230,12 +1230,18 @@
       },
       "HC.Core/1.0.0": {
         "runtime": {
-          "HC.Core.dll": {}
+          "HC.Core.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "HC.Core.Shared/1.0.0": {
         "runtime": {
-          "HC.Core.Shared.dll": {}
+          "HC.Core.Shared.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "HC.Data/1.0.0": {
@@ -1247,7 +1253,10 @@
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.0"
         },
         "runtime": {
-          "HC.Data.dll": {}
+          "HC.Data.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "HC.FakeData/1.0.0": {
@@ -1256,7 +1265,10 @@
           "HC.Core.Shared": "1.0.0"
         },
         "runtime": {
-          "HC.FakeData.dll": {}
+          "HC.FakeData.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "HC.Manager/1.0.0": {
@@ -1267,7 +1279,10 @@
           "FluentValidation.AspNetCore": "11.3.0"
         },
         "runtime": {
-          "HC.Manager.dll": {}
+          "HC.Manager.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "HC.WebApi/1.0.0": {
@@ -1291,7 +1306,10 @@
           "SerilogTimings": "3.1.0"
         },
         "runtime": {
-          "HC.WebApi.dll": {}
+          "HC.WebApi.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }

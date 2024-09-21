@@ -449,12 +449,18 @@
       },
       "HC.Core/1.0.0": {
         "runtime": {
-          "HC.Core.dll": {}
+          "HC.Core.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "HC.Core.Shared/1.0.0": {
         "runtime": {
-          "HC.Core.Shared.dll": {}
+          "HC.Core.Shared.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "HC.Manager/1.0.0": {
@@ -465,7 +471,10 @@
           "FluentValidation.AspNetCore": "11.3.0"
         },
         "runtime": {
-          "HC.Manager.dll": {}
+          "HC.Manager.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }

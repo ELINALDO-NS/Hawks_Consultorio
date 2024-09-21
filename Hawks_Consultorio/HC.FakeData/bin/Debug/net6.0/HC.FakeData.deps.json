@@ -9,6 +9,7 @@
       "HC.FakeData/1.0.0": {
         "dependencies": {
           "Bogus": "35.6.0",
+          "HC.Core": "1.0.0",
           "HC.Core.Shared": "1.0.0"
         },
         "runtime": {
@@ -23,9 +24,20 @@
           }
         }
       },
+      "HC.Core/1.0.0": {
+        "runtime": {
+          "HC.Core.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
       "HC.Core.Shared/1.0.0": {
         "runtime": {
-          "HC.Core.Shared.dll": {}
+          "HC.Core.Shared.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }
@@ -42,6 +54,11 @@
       "sha512": "sha512-WiK99a8LedzzG7QbnJ1OZT02WZHjr8V6L+cmGJbuga7TtI+Whd+KFWNmVPtXKACFNjz2c/FIR6QDNJsHD6Eazg==",
       "path": "bogus/35.6.0",
       "hashPath": "bogus.35.6.0.nupkg.sha512"
+    },
+    "HC.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "HC.Core.Shared/1.0.0": {
       "type": "project",

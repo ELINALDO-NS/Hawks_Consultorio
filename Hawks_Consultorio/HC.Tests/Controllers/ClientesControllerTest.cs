@@ -49,7 +49,6 @@ namespace HC.Tests.Controllers
 
 
             var result = (ObjectResult)await controller.Get();
-
             await _menager.Received().GetClientesAsync();
             result.StatusCode.Should().Be(StatusCodes.Status200OK);
             result.Value.Should().BeEquivalentTo(controle);

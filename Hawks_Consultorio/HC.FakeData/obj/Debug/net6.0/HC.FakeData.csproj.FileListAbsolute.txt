@@ -15,3 +15,5 @@ C:\Users\Meu_Notebook\Documents\Projetos\CSHARP\Hawks_Consultorio\Hawks_Consulto
 C:\Users\Meu_Notebook\Documents\Projetos\CSHARP\Hawks_Consultorio\Hawks_Consultorio\HC.FakeData\obj\Debug\net6.0\refint\HC.FakeData.dll
 C:\Users\Meu_Notebook\Documents\Projetos\CSHARP\Hawks_Consultorio\Hawks_Consultorio\HC.FakeData\obj\Debug\net6.0\HC.FakeData.pdb
 C:\Users\Meu_Notebook\Documents\Projetos\CSHARP\Hawks_Consultorio\Hawks_Consultorio\HC.FakeData\obj\Debug\net6.0\ref\HC.FakeData.dll
+C:\Users\Meu_Notebook\Documents\Projetos\CSHARP\Hawks_Consultorio\Hawks_Consultorio\HC.FakeData\bin\Debug\net6.0\HC.Core.dll
+C:\Users\Meu_Notebook\Documents\Projetos\CSHARP\Hawks_Consultorio\Hawks_Consultorio\HC.FakeData\bin\Debug\net6.0\HC.Core.pdb

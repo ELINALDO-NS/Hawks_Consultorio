@@ -22,17 +22,21 @@ namespace HC.Data.Repository
 
         public async Task<IEnumerable<Cliente>> GetClientesAsync()
         {
-            return await _context.Clientes.Include(e => e.Endereco).
+            return await _context.Clientes.
+                Include(e => e.Endereco).
                 Include(t => t.Telefones).
                 AsNoTracking().ToListAsync();
         }
 
         public async Task<Cliente> GetClienteAsync(int id)
         {
-            return await _context.Clientes.Include(x => x.Endereco).
+            var cliente =
+             await _context.Clientes.Include(x => x.Endereco).
                  Include(t => t.Telefones).
-                AsNoTracking().
+                 Include(x => x.Endereco).
+               
                 SingleOrDefaultAsync(x => x.Id==id);
+            return cliente;
         }
 
         public async Task<Cliente> InsertClienteAsync(Cliente cliente)

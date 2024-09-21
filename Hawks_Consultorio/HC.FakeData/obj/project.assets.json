@@ -15,6 +15,16 @@
           }
         }
       },
+      "HC.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/HC.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/HC.Core.dll": {}
+        }
+      },
       "HC.Core.Shared/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -47,6 +57,11 @@
         "lib/netstandard2.0/Bogus.xml"
       ]
     },
+    "HC.Core/1.0.0": {
+      "type": "project",
+      "path": "../HC.Core/HC.Core.csproj",
+      "msbuildProject": "../HC.Core/HC.Core.csproj"
+    },
     "HC.Core.Shared/1.0.0": {
       "type": "project",
       "path": "../HC.Core.Shared/HC.Core.Shared.csproj",
@@ -56,6 +71,7 @@
   "projectFileDependencyGroups": {
     "net6.0": [
       "Bogus >= 35.6.0",
+      "HC.Core >= 1.0.0",
       "HC.Core.Shared >= 1.0.0"
     ]
   },
@@ -89,6 +105,9 @@
           "projectReferences": {
             "C:\\Users\\Meu_Notebook\\Documents\\Projetos\\CSHARP\\Hawks_Consultorio\\Hawks_Consultorio\\HC.Core.Shared\\HC.Core.Shared.csproj": {
               "projectPath": "C:\\Users\\Meu_Notebook\\Documents\\Projetos\\CSHARP\\Hawks_Consultorio\\Hawks_Consultorio\\HC.Core.Shared\\HC.Core.Shared.csproj"
+            },
+            "C:\\Users\\Meu_Notebook\\Documents\\Projetos\\CSHARP\\Hawks_Consultorio\\Hawks_Consultorio\\HC.Core\\HC.Core.csproj": {
+              "projectPath": "C:\\Users\\Meu_Notebook\\Documents\\Projetos\\CSHARP\\Hawks_Consultorio\\Hawks_Consultorio\\HC.Core\\HC.Core.csproj"
             }
           }
         }
@@ -127,15 +146,15 @@
         "downloadDependencies": [
           {
             "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[6.0.31, 6.0.31]"
+            "version": "[6.0.33, 6.0.33]"
           },
           {
             "name": "Microsoft.NETCore.App.Ref",
-            "version": "[6.0.31, 6.0.31]"
+            "version": "[6.0.33, 6.0.33]"
           },
           {
             "name": "Microsoft.WindowsDesktop.App.Ref",
-            "version": "[6.0.31, 6.0.31]"
+            "version": "[6.0.33, 6.0.33]"
           }
         ],
         "frameworkReferences": {
@@ -143,7 +162,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }
