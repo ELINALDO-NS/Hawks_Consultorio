@@ -8,7 +8,8 @@ namespace HC.WebApi.Configuration
         public static void AddAutoMapperConfiguration(this IServiceCollection services)
         {
             services.AddAutoMapper(typeof(NovoClienteMappigProfile), typeof(AlteraClienteMappingProfile));
-            services.AddAutoMapper(typeof(NovoMedicoMappingProfile));
+            services.AddAutoMapper(typeof(NovoMedicoMappingProfile), typeof(UsuarioMappingProfile));
+           
                
                 
                 

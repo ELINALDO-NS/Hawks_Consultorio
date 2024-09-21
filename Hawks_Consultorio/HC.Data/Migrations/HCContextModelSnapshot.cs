@@ -148,6 +148,19 @@ namespace HC.Data.Migrations
                     b.ToTable("Tetefones");
                 });
 
+            modelBuilder.Entity("HC.Core.Domain.Usuario", b =>
+                {
+                    b.Property<string>("Login")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("Senha")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Login");
+
+                    b.ToTable("Usuarios");
+                });
+
             modelBuilder.Entity("EspecialidadeMedico", b =>
                 {
                     b.HasOne("HC.Core.Domain.Especialidade", null)

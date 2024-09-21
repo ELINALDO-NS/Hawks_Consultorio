@@ -16,7 +16,9 @@ namespace HC.WebApi.Configuration
             services.AddScoped<IMedicoManager, MedicoManager>();
             services.AddScoped<IEspecialidadeRepository, EspecialidadeRepository>();
             services.AddScoped<IEspecialidadeManager, EspecialidadeManager>();
-           
+            services.AddScoped<IUsuarioRepository, UsuarioRepository>();
+            services.AddScoped<IUsuarioManager, UsuarioManager>();
+
         }
     }
 }

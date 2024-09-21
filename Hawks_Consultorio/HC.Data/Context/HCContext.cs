@@ -14,6 +14,7 @@ namespace HC.Data.Context
         public DbSet<Telefone> Tetefones { get; set; }
         public DbSet<Medico> Medicos { get; set; }
         public DbSet<Especialidade> Especialidades { get; set; }
+        public DbSet<Usuario> Usuarios { get; set; }
 
         public HCContext(DbContextOptions options) : base(options)
         {
@@ -25,6 +26,7 @@ namespace HC.Data.Context
             modelBuilder.ApplyConfiguration(new ClienteConfiguration());
             modelBuilder.ApplyConfiguration(new EnderecoConfiguration());
             modelBuilder.ApplyConfiguration(new TelefoneConfiguration());
+            modelBuilder.ApplyConfiguration(new UsuarioConfiguration());
         }
     }
 }
