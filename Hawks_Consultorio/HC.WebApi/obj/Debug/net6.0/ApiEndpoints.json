@@ -389,6 +389,16 @@
   },
   {
     "ContainingType": "HC.WebApi.Controllers.UsuariosController",
+    "Method": "Get",
+    "RelativePath": "api/Usuarios",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HC.WebApi.Controllers.UsuariosController",
     "Method": "Post",
     "RelativePath": "api/Usuarios",
     "HttpMethod": "POST",
@@ -397,7 +407,7 @@
     "Parameters": [
       {
         "Name": "usuario",
-        "Type": "HC.Core.Domain.Usuario",
+        "Type": "HC.Core.Shared.ModelViews.Usuario.NovoUsuario",
         "IsRequired": true
       }
     ],
@@ -405,34 +415,8 @@
   },
   {
     "ContainingType": "HC.WebApi.Controllers.UsuariosController",
-    "Method": "Get",
-    "RelativePath": "api/Usuarios/{login}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "login",
-        "Type": "System.String",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "System.String",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "HC.WebApi.Controllers.UsuariosController",
-    "Method": "ValidaUsuario",
-    "RelativePath": "api/Usuarios/ValidaUsuario",
+    "Method": "Login",
+    "RelativePath": "api/Usuarios/login",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,

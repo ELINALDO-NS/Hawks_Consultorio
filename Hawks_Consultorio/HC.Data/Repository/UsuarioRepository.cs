@@ -25,15 +25,30 @@ namespace HC.Data.Repository
         }
         public async Task<Usuario> GetAsync(string login)
         {
-            return await context.Usuarios.AsNoTracking()
+            return await context.Usuarios.
+                Include(u => u.Funcoes).
+                AsNoTracking()
                 .SingleOrDefaultAsync(p => p.Login == login);
         }
         public async Task<Usuario> InsertAsync(Usuario usuario)
         {
+            await InsertUsuarioFuncaAsync(usuario);
             await context.Usuarios.AddAsync(usuario);
             await context.SaveChangesAsync();
             return usuario;
         }
+
+        private async Task InsertUsuarioFuncaAsync(Usuario usuario)
+        {
+          var funcoesconsultadas = new List<Funcao>();
+            foreach (var funcao in usuario.Funcoes)
+            {
+                var func = await context.Funcoes.FindAsync(funcao.Id);
+                funcoesconsultadas.Add(func);
+            }
+            usuario.Funcoes = funcoesconsultadas;
+        }
+
         public async Task<Usuario> UpdateAsync(Usuario usuario)
         {
             var usuarioConsultado = await context.Usuarios.FindAsync(usuario.Login);

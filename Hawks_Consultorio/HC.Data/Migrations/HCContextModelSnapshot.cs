@@ -37,6 +37,21 @@ namespace HC.Data.Migrations
                     b.ToTable("EspecialidadeMedico");
                 });
 
+            modelBuilder.Entity("FuncaoUsuario", b =>
+                {
+                    b.Property<int>("FuncoesId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("UsuariosLogin")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("FuncoesId", "UsuariosLogin");
+
+                    b.HasIndex("UsuariosLogin");
+
+                    b.ToTable("FuncaoUsuario");
+                });
+
             modelBuilder.Entity("HC.Core.Domain.Cliente", b =>
                 {
                     b.Property<int>("Id")
@@ -116,6 +131,22 @@ namespace HC.Data.Migrations
                     b.ToTable("Especialidades");
                 });
 
+            modelBuilder.Entity("HC.Core.Domain.Funcao", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<string>("Descricao")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Funcoes");
+                });
+
             modelBuilder.Entity("HC.Core.Domain.Medico", b =>
                 {
                     b.Property<int>("Id")
@@ -172,6 +203,21 @@ namespace HC.Data.Migrations
                     b.HasOne("HC.Core.Domain.Medico", null)
                         .WithMany()
                         .HasForeignKey("MedicosId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("FuncaoUsuario", b =>
+                {
+                    b.HasOne("HC.Core.Domain.Funcao", null)
+                        .WithMany()
+                        .HasForeignKey("FuncoesId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("HC.Core.Domain.Usuario", null)
+                        .WithMany()
+                        .HasForeignKey("UsuariosLogin")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });

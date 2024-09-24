@@ -1,10 +1,11 @@
 ﻿using HC.Core.Domain;
+using HC.Core.Shared.ModelViews.Usuario;
 using HC.Manager.Interfaces.Managers;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
+using System.Data;
 using System.Threading.Tasks;
-
-// For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace HC.WebApi.Controllers
 {
@@ -19,23 +20,26 @@ namespace HC.WebApi.Controllers
         }
 
         [HttpGet]
-        [Route("ValidaUsuario")]
-        public async Task<IActionResult> ValidaUsuario( Usuario usuario)
+        [Route("login")]
+        public async Task<IActionResult> Login( Usuario usuario)
         {
-            var valido = await manager.ValidaSenhaAsync(usuario);
-            if (valido)
+            var UsuarioLogado = await manager.ValidaUsuarioGeraTokemAsync(usuario);
+            if (UsuarioLogado != null)
             {
-                return Ok();
+                return Ok(UsuarioLogado);
             }
             return Unauthorized();
         }
-        [HttpGet("{login}")]
-        public string Get(string login)
+        [Authorize]
+        [HttpGet()]
+        public async Task<IActionResult> Get()
         {
-            return "value";
+            
+            var usuario = await manager.GetAsync(User.Identity.Name);
+            return Ok(usuario);
         }
         [HttpPost]
-        public async Task<IActionResult> Post(Usuario usuario)
+        public async Task<IActionResult> Post(NovoUsuario usuario)
         {
             var usuarioInserido = await manager.InsertAsync(usuario);
             return CreatedAtAction(nameof(Get), new { login = usuario.Login }, usuarioInserido);

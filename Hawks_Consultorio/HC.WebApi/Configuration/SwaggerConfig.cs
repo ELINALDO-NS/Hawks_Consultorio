@@ -1,4 +1,5 @@
 ﻿using MicroElements.Swashbuckle.FluentValidation.AspNetCore;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.OpenApi.Models;
@@ -38,13 +39,28 @@ namespace HC.WebApi.Configuration
                 c.IncludeXmlComments(XmlPath);
                 XmlPath = Path.Combine(AppContext.BaseDirectory, "HC.Core.Shared.xml");
                 c.IncludeXmlComments(XmlPath);
-
+                var securityschema = new OpenApiSecurityScheme{
+                    Name = "Autorization",
+                    Description = "Insira o Tokem Bearer",
+                    In = ParameterLocation.Header, 
+                    Type = SecuritySchemeType.Http,
+                    Scheme = "Bearer",
+                    BearerFormat = "JWT",
+                    Reference = new OpenApiReference
+                    {
+                        Id = JwtBearerDefaults.AuthenticationScheme,
+                        Type = ReferenceType.SecurityScheme
+                    }
+                };
+                c.AddSecurityDefinition(JwtBearerDefaults.AuthenticationScheme, securityschema);
+                c.AddSecurityRequirement(new OpenApiSecurityRequirement
+                {
+                    {securityschema,new string[]{} }
+                });
             });
+            
             services.AddFluentValidationRulesToSwagger();
-
-
-
-
+         
         }
         public static void UseSwaggerConfiguration(this IApplicationBuilder app)
         {

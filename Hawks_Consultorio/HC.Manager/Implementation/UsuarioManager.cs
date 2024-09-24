@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using HC.Core.Domain;
 using HC.Core.Shared.ModelViews.Usuario;
+using HC.Manager.Interfaces;
 using HC.Manager.Interfaces.Managers;
 using HC.Manager.Interfaces.Repositories;
 using Microsoft.AspNetCore.Identity;
@@ -16,10 +17,13 @@ namespace HC.Manager.Implementation
     {
         private readonly IUsuarioRepository _repository;
         private readonly IMapper _mapper;
-        public UsuarioManager(IUsuarioRepository repository, IMapper mapper)
+        private readonly IJWTService _jWT;
+
+        public UsuarioManager(IUsuarioRepository repository, IMapper mapper,IJWTService jWT)
         {
             _repository = repository;
             _mapper = mapper;
+            _jWT = jWT;
         }
         public async Task<IEnumerable<UsuarioView>> GetAsync()
         {
@@ -32,14 +36,19 @@ namespace HC.Manager.Implementation
             return _mapper.Map<UsuarioView>(await _repository.GetAsync(login));
         }
 
-        public async Task<UsuarioView> InsertAsync(Usuario usuario)
+        public async Task<UsuarioView> InsertAsync(NovoUsuario novousuario)
         {
-          var passwordhasher = new PasswordHasher<Usuario>();
-            usuario.Senha = passwordhasher.HashPassword(usuario, usuario.Senha);
-            await _repository.InsertAsync(usuario);
-            return _mapper.Map<UsuarioView>(usuario);
+            var usuario = _mapper.Map<Usuario>(novousuario);
+            ConverteSenhaEmHash(usuario);
+            return _mapper.Map<UsuarioView>(await _repository.InsertAsync(usuario));
 
-         
+
+        }
+
+        private void ConverteSenhaEmHash(Usuario usuario)
+        {
+            var passwordhasher = new PasswordHasher<Usuario>();
+            usuario.Senha = passwordhasher.HashPassword(usuario, usuario.Senha);
         }
 
         public async Task<UsuarioView> UpdateUsuarioAsync(Usuario usuario)
@@ -50,16 +59,25 @@ namespace HC.Manager.Implementation
             return _mapper.Map<UsuarioView>(usuario);
         }
 
-        public async Task<bool> ValidaSenhaAsync(Usuario usuario)
+        public async Task<UsuarioLogado> ValidaUsuarioGeraTokemAsync(Usuario usuario)
         {
             var usuarioconsultado = await _repository.GetAsync(usuario.Login);
             if (usuarioconsultado == null)
             {
-                return false;
+                return null;
             }
-
+            if (await ValidaEAtualizaHashAsync(usuario,usuarioconsultado.Senha))
+            {
+                var usuariologado = _mapper.Map<UsuarioLogado>(usuarioconsultado);
+               usuariologado.Tokem = _jWT.GerarTokem(usuarioconsultado);
+                return usuariologado;
+            }
+            return null;
+        }
+        private async Task<bool> ValidaEAtualizaHashAsync(Usuario usuario,string hash)
+        {
             var passwordhasher = new PasswordHasher<Usuario>();
-            var status = passwordhasher.VerifyHashedPassword(usuario, usuarioconsultado.Senha, usuario.Senha);
+            var status = passwordhasher.VerifyHashedPassword(usuario, hash, usuario.Senha);
             switch (status)
             {
                 case PasswordVerificationResult.Failed:
@@ -67,10 +85,10 @@ namespace HC.Manager.Implementation
                 case PasswordVerificationResult.Success:
                     return true;
                 case PasswordVerificationResult.SuccessRehashNeeded:
-                   await UpdateUsuarioAsync(usuario);
+                    await UpdateUsuarioAsync(usuario);
                     return true;
                 default:
-                  throw new  InvalidOperationException();
+                    throw new InvalidOperationException();
             }
         }
     }

@@ -12,8 +12,8 @@ namespace HC.Manager.Interfaces.Managers
     {
         Task<IEnumerable<UsuarioView>> GetAsync();
         Task<UsuarioView> GetAsync(string login);
-        Task<UsuarioView> InsertAsync(Usuario usuario);
+        Task<UsuarioView> InsertAsync(NovoUsuario novousuario);
         Task<UsuarioView> UpdateUsuarioAsync(Usuario usuario);
-        Task<bool> ValidaSenhaAsync(Usuario usuario);
+        Task<UsuarioLogado> ValidaUsuarioGeraTokemAsync(Usuario usuario);
     }
 }

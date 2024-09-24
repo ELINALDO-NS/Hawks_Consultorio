@@ -39,6 +39,7 @@ namespace HC.WebApi
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            services.AddJwtTConfiguration(Configuration);
             services.AddFluenteValidationConfiguration();
             services.AddAutoMapperConfiguration();
             services.AddSwaggerConfiguration();
@@ -65,7 +66,7 @@ namespace HC.WebApi
 
             app.UseRouting();
 
-            app.UseAuthorization();
+            app.UseJwtConfiguration();
 
             app.UseEndpoints(endpoints =>
             {
